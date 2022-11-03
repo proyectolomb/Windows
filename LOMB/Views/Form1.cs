@@ -1,0 +1,195 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace LOMB
+{
+    public partial class Form1 : Form
+    {
+
+        public Form1()
+        {
+            InitializeComponent();
+            customizeDesign();
+            //this.MaximizeBox = false;
+            //this.WindowState = FormWindowState.Maximized;
+            //this.TopMost = true;
+            //this.FormBorderStyle = FormBorderStyle.None;
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            //this.MinimizeBox = false;
+            this.MaximizeBox = false;
+        }
+
+        private void customizeDesign()
+        {
+            panelPrestamosSubmenu.Visible = false;
+            panelLibrosSubmenu.Visible = false;
+            panelLectoresSubmenu.Visible = false;
+        }
+
+        private void hideSubMenu()
+        {
+            if(panelPrestamosSubmenu.Visible)
+                panelPrestamosSubmenu.Visible = false;
+            if (panelLibrosSubmenu.Visible)
+                panelLibrosSubmenu.Visible = false;
+            if (panelLectoresSubmenu.Visible)
+                panelLectoresSubmenu.Visible = false;
+
+        }
+
+        private void showSubMenu(Panel subMenu)
+        {
+            if(subMenu.Visible == false) 
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            } else
+            {
+                subMenu.Visible = false;
+            }
+        }
+
+        private void btnPrestamo_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelPrestamosSubmenu);
+        }
+        #region PrestamoSubMenu
+        private void btnNuevoPrestamo_Click(object sender, EventArgs e)
+        {
+            Views.NuevoPrestamo frmNuevoPrestamo = new Views.NuevoPrestamo();
+            openChildForm(frmNuevoPrestamo);
+
+            hideSubMenu();
+        }
+
+        private void btnEnCurso_Click(object sender, EventArgs e)
+        {
+            Views.PrestamosEnCurso frmPrestamosEnCurso = new Views.PrestamosEnCurso();
+            openChildForm(frmPrestamosEnCurso);
+
+            hideSubMenu();
+        }
+
+        private void btnDevolucion_Click(object sender, EventArgs e)
+        {
+            Views.Devolucion frmDevolucion = new Views.Devolucion();
+            openChildForm(frmDevolucion);
+
+            hideSubMenu();
+        }
+
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            /***TO-DO: IR A PAGINA***/
+            hideSubMenu();
+        }
+        #endregion
+        private void btnLibros_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelLibrosSubmenu);
+        }
+        #region LibroSubMenu
+        private void btnNuevoLibro_Click(object sender, EventArgs e)
+        {
+            Views.NuevoLibro frmNuevoLibro = new Views.NuevoLibro();
+            openChildForm(frmNuevoLibro);
+            /***TO-DO: IR A PAGINA***/
+            hideSubMenu();
+        }
+
+        private void btnAutores_Click(object sender, EventArgs e)
+        {
+            /***TO-DO: IR A PAGINA***/
+            hideSubMenu();
+        }
+
+        private void btnListadoLibros_Click(object sender, EventArgs e)
+        {
+            /***TO-DO: IR A PAGINA***/
+            hideSubMenu();
+        }
+        #endregion
+        private void btnLectores_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelLectoresSubmenu);
+        }
+        #region LectorSubMenu
+        private void btnNuevoLector_Click(object sender, EventArgs e)
+        {
+            /***TO-DO: IR A PAGINA***/
+            hideSubMenu();
+        }
+
+        private void btnListadoLectores_Click(object sender, EventArgs e)
+        {
+            /***TO-DO: IR A PAGINA***/
+            hideSubMenu();
+        }
+        #endregion
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelHome.Controls.Add(childForm);
+            panelHome.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void btnHomeNuevoPrestamo_Click(object sender, EventArgs e)
+        {
+            Views.NuevoPrestamo frmNuevoPrestamo = new Views.NuevoPrestamo();
+            openChildForm(frmNuevoPrestamo);
+
+            hideSubMenu();
+        }
+
+        private void btnHomeDevolucion_Click(object sender, EventArgs e)
+        {
+            Views.Devolucion frmDevolucion = new Views.Devolucion();
+            openChildForm(frmDevolucion);
+
+            hideSubMenu();
+        }
+
+        private void btnHomePrestamosEnCurso_Click(object sender, EventArgs e)
+        {
+            Views.PrestamosEnCurso frmPrestamosEnCurso = new Views.PrestamosEnCurso();
+            openChildForm(frmPrestamosEnCurso);
+
+            hideSubMenu();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            Views.Home home = new Views.Home();
+            openChildForm(home);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Views.Home home = new Views.Home();
+            openChildForm(home);
+        }
+
+        private void btnCerrarApp_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
+}
