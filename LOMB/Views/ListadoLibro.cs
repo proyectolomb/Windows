@@ -14,10 +14,10 @@ using Dapper;
 
 namespace LOMB.Views
 {
-    public partial class NuevoLibro : Form
+    public partial class ListadoLibro : Form
     {
         MaterialSkinManager skinManager;
-        public NuevoLibro()
+        public ListadoLibro()
         {
             InitializeComponent();
             /*skinManager = MaterialSkinManager.Instance;

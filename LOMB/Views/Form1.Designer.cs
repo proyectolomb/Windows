@@ -93,7 +93,7 @@ namespace LOMB
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Name = "btnHome";
@@ -123,7 +123,7 @@ namespace LOMB
             this.btnListadoLectores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnListadoLectores.FlatAppearance.BorderSize = 0;
             this.btnListadoLectores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListadoLectores.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListadoLectores.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListadoLectores.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnListadoLectores.Location = new System.Drawing.Point(0, 40);
             this.btnListadoLectores.Name = "btnListadoLectores";
@@ -141,7 +141,7 @@ namespace LOMB
             this.btnNuevoLector.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNuevoLector.FlatAppearance.BorderSize = 0;
             this.btnNuevoLector.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoLector.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoLector.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoLector.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnNuevoLector.Location = new System.Drawing.Point(0, 0);
             this.btnNuevoLector.Name = "btnNuevoLector";
@@ -159,7 +159,7 @@ namespace LOMB
             this.btnLectores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLectores.FlatAppearance.BorderSize = 0;
             this.btnLectores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLectores.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLectores.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLectores.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnLectores.Location = new System.Drawing.Point(0, 376);
             this.btnLectores.Name = "btnLectores";
@@ -190,7 +190,7 @@ namespace LOMB
             this.btnListadoLibros.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnListadoLibros.FlatAppearance.BorderSize = 0;
             this.btnListadoLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListadoLibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListadoLibros.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListadoLibros.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnListadoLibros.Location = new System.Drawing.Point(0, 80);
             this.btnListadoLibros.Name = "btnListadoLibros";
@@ -208,7 +208,7 @@ namespace LOMB
             this.btnAutores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAutores.FlatAppearance.BorderSize = 0;
             this.btnAutores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutores.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAutores.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAutores.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnAutores.Location = new System.Drawing.Point(0, 40);
             this.btnAutores.Name = "btnAutores";
@@ -226,7 +226,7 @@ namespace LOMB
             this.btnNuevoLibro.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNuevoLibro.FlatAppearance.BorderSize = 0;
             this.btnNuevoLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoLibro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoLibro.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoLibro.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnNuevoLibro.Location = new System.Drawing.Point(0, 0);
             this.btnNuevoLibro.Name = "btnNuevoLibro";
@@ -244,7 +244,7 @@ namespace LOMB
             this.btnLibros.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLibros.FlatAppearance.BorderSize = 0;
             this.btnLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLibros.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLibros.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnLibros.Location = new System.Drawing.Point(0, 208);
             this.btnLibros.Name = "btnLibros";
@@ -276,7 +276,7 @@ namespace LOMB
             this.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHistorial.FlatAppearance.BorderSize = 0;
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistorial.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistorial.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnHistorial.Location = new System.Drawing.Point(0, 120);
             this.btnHistorial.Name = "btnHistorial";
@@ -294,7 +294,7 @@ namespace LOMB
             this.btnDevolucion.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDevolucion.FlatAppearance.BorderSize = 0;
             this.btnDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevolucion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevolucion.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnDevolucion.Location = new System.Drawing.Point(0, 80);
             this.btnDevolucion.Name = "btnDevolucion";
@@ -312,7 +312,7 @@ namespace LOMB
             this.btnEnCurso.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEnCurso.FlatAppearance.BorderSize = 0;
             this.btnEnCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnCurso.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnCurso.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnEnCurso.Location = new System.Drawing.Point(0, 40);
             this.btnEnCurso.Name = "btnEnCurso";
@@ -330,7 +330,7 @@ namespace LOMB
             this.btnNuevoPrestamo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNuevoPrestamo.FlatAppearance.BorderSize = 0;
             this.btnNuevoPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoPrestamo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoPrestamo.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnNuevoPrestamo.Location = new System.Drawing.Point(0, 0);
             this.btnNuevoPrestamo.Name = "btnNuevoPrestamo";
@@ -348,7 +348,7 @@ namespace LOMB
             this.btnPrestamo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPrestamo.FlatAppearance.BorderSize = 0;
             this.btnPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrestamo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrestamo.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnPrestamo.Location = new System.Drawing.Point(0, 0);
             this.btnPrestamo.Name = "btnPrestamo";

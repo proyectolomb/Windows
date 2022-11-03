@@ -88,7 +88,9 @@ namespace LOMB
 
         private void btnHistorial_Click(object sender, EventArgs e)
         {
-            /***TO-DO: IR A PAGINA***/
+            Views.HistorialPrestamo frmHistorialPrestamo = new Views.HistorialPrestamo();
+            openChildForm(frmHistorialPrestamo);
+
             hideSubMenu();
         }
         #endregion
@@ -99,9 +101,6 @@ namespace LOMB
         #region LibroSubMenu
         private void btnNuevoLibro_Click(object sender, EventArgs e)
         {
-            Views.NuevoLibro frmNuevoLibro = new Views.NuevoLibro();
-            openChildForm(frmNuevoLibro);
-            /***TO-DO: IR A PAGINA***/
             hideSubMenu();
         }
 
@@ -113,7 +112,9 @@ namespace LOMB
 
         private void btnListadoLibros_Click(object sender, EventArgs e)
         {
-            /***TO-DO: IR A PAGINA***/
+            Views.ListadoLibro frmNuevoLibro = new Views.ListadoLibro();
+            openChildForm(frmNuevoLibro);
+
             hideSubMenu();
         }
         #endregion

@@ -1,7 +1,7 @@
 ﻿
 namespace LOMB.Views
 {
-    partial class NuevoLibro
+    partial class ListadoLibro
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace LOMB.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoLibro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListadoLibro));
             this.btnEditar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
