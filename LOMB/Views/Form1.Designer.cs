@@ -31,6 +31,10 @@ namespace LOMB
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pctUsuario = new System.Windows.Forms.PictureBox();
+            this.pctLogout = new System.Windows.Forms.PictureBox();
+            this.lbUsuario = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.panelLectoresSubmenu = new System.Windows.Forms.Panel();
@@ -52,6 +56,9 @@ namespace LOMB
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelHome = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogout)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelLectoresSubmenu.SuspendLayout();
             this.panelLibrosSubmenu.SuspendLayout();
@@ -64,6 +71,7 @@ namespace LOMB
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
+            this.panelSideMenu.Controls.Add(this.panel2);
             this.panelSideMenu.Controls.Add(this.panel1);
             this.panelSideMenu.Controls.Add(this.panelLectoresSubmenu);
             this.panelSideMenu.Controls.Add(this.btnLectores);
@@ -77,6 +85,50 @@ namespace LOMB
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(207, 817);
             this.panelSideMenu.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pctUsuario);
+            this.panel2.Controls.Add(this.pctLogout);
+            this.panel2.Controls.Add(this.lbUsuario);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 560);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(207, 59);
+            this.panel2.TabIndex = 8;
+            // 
+            // pctUsuario
+            // 
+            this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
+            this.pctUsuario.Location = new System.Drawing.Point(5, 18);
+            this.pctUsuario.Name = "pctUsuario";
+            this.pctUsuario.Size = new System.Drawing.Size(24, 30);
+            this.pctUsuario.TabIndex = 10;
+            this.pctUsuario.TabStop = false;
+            // 
+            // pctLogout
+            // 
+            this.pctLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctLogout.Image = ((System.Drawing.Image)(resources.GetObject("pctLogout.Image")));
+            this.pctLogout.Location = new System.Drawing.Point(168, 16);
+            this.pctLogout.Name = "pctLogout";
+            this.pctLogout.Size = new System.Drawing.Size(33, 30);
+            this.pctLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pctLogout.TabIndex = 0;
+            this.pctLogout.TabStop = false;
+            this.pctLogout.MouseEnter += new System.EventHandler(this.pctLogout_MouseEnter);
+            this.pctLogout.MouseLeave += new System.EventHandler(this.pctLogout_MouseLeave);
+            // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.lbUsuario.Location = new System.Drawing.Point(33, 19);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(107, 20);
+            this.lbUsuario.TabIndex = 9;
+            this.lbUsuario.Text = "USUARIO_API";
             // 
             // panel1
             // 
@@ -93,8 +145,8 @@ namespace LOMB
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -124,7 +176,7 @@ namespace LOMB
             this.btnListadoLectores.FlatAppearance.BorderSize = 0;
             this.btnListadoLectores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListadoLectores.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListadoLectores.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnListadoLectores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnListadoLectores.Location = new System.Drawing.Point(0, 40);
             this.btnListadoLectores.Name = "btnListadoLectores";
             this.btnListadoLectores.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -142,7 +194,7 @@ namespace LOMB
             this.btnNuevoLector.FlatAppearance.BorderSize = 0;
             this.btnNuevoLector.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoLector.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoLector.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnNuevoLector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnNuevoLector.Location = new System.Drawing.Point(0, 0);
             this.btnNuevoLector.Name = "btnNuevoLector";
             this.btnNuevoLector.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -159,8 +211,8 @@ namespace LOMB
             this.btnLectores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLectores.FlatAppearance.BorderSize = 0;
             this.btnLectores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLectores.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLectores.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnLectores.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLectores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnLectores.Location = new System.Drawing.Point(0, 376);
             this.btnLectores.Name = "btnLectores";
             this.btnLectores.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -191,7 +243,7 @@ namespace LOMB
             this.btnListadoLibros.FlatAppearance.BorderSize = 0;
             this.btnListadoLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListadoLibros.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListadoLibros.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnListadoLibros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnListadoLibros.Location = new System.Drawing.Point(0, 80);
             this.btnListadoLibros.Name = "btnListadoLibros";
             this.btnListadoLibros.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -209,7 +261,7 @@ namespace LOMB
             this.btnAutores.FlatAppearance.BorderSize = 0;
             this.btnAutores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAutores.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAutores.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAutores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnAutores.Location = new System.Drawing.Point(0, 40);
             this.btnAutores.Name = "btnAutores";
             this.btnAutores.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -227,7 +279,7 @@ namespace LOMB
             this.btnNuevoLibro.FlatAppearance.BorderSize = 0;
             this.btnNuevoLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoLibro.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoLibro.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnNuevoLibro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnNuevoLibro.Location = new System.Drawing.Point(0, 0);
             this.btnNuevoLibro.Name = "btnNuevoLibro";
             this.btnNuevoLibro.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -244,8 +296,8 @@ namespace LOMB
             this.btnLibros.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLibros.FlatAppearance.BorderSize = 0;
             this.btnLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLibros.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLibros.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnLibros.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLibros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnLibros.Location = new System.Drawing.Point(0, 208);
             this.btnLibros.Name = "btnLibros";
             this.btnLibros.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -277,7 +329,7 @@ namespace LOMB
             this.btnHistorial.FlatAppearance.BorderSize = 0;
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistorial.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistorial.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnHistorial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnHistorial.Location = new System.Drawing.Point(0, 120);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -295,7 +347,7 @@ namespace LOMB
             this.btnDevolucion.FlatAppearance.BorderSize = 0;
             this.btnDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevolucion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevolucion.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnDevolucion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnDevolucion.Location = new System.Drawing.Point(0, 80);
             this.btnDevolucion.Name = "btnDevolucion";
             this.btnDevolucion.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -313,7 +365,7 @@ namespace LOMB
             this.btnEnCurso.FlatAppearance.BorderSize = 0;
             this.btnEnCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnCurso.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnCurso.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnEnCurso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnEnCurso.Location = new System.Drawing.Point(0, 40);
             this.btnEnCurso.Name = "btnEnCurso";
             this.btnEnCurso.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -331,7 +383,7 @@ namespace LOMB
             this.btnNuevoPrestamo.FlatAppearance.BorderSize = 0;
             this.btnNuevoPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoPrestamo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoPrestamo.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnNuevoPrestamo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnNuevoPrestamo.Location = new System.Drawing.Point(0, 0);
             this.btnNuevoPrestamo.Name = "btnNuevoPrestamo";
             this.btnNuevoPrestamo.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -348,8 +400,8 @@ namespace LOMB
             this.btnPrestamo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPrestamo.FlatAppearance.BorderSize = 0;
             this.btnPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrestamo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrestamo.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnPrestamo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrestamo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnPrestamo.Location = new System.Drawing.Point(0, 0);
             this.btnPrestamo.Name = "btnPrestamo";
             this.btnPrestamo.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -403,6 +455,10 @@ namespace LOMB
             this.Text = "ComercioTeca";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogout)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panelLectoresSubmenu.ResumeLayout(false);
             this.panelLibrosSubmenu.ResumeLayout(false);
@@ -436,6 +492,10 @@ namespace LOMB
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lbUsuario;
+        private System.Windows.Forms.PictureBox pctLogout;
+        private System.Windows.Forms.PictureBox pctUsuario;
     }
 }
 

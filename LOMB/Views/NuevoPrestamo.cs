@@ -16,5 +16,16 @@ namespace LOMB.Views
         {
             InitializeComponent();
         }
+
+        private void cmbBoxEjemplar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBoxLector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

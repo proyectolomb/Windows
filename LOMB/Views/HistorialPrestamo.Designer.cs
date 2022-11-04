@@ -34,18 +34,20 @@ namespace LOMB.Views
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnAplicar = new Guna.UI2.WinForms.Guna2Button();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lbTitleHistorial = new System.Windows.Forms.Label();
+            this.lbFiltros = new System.Windows.Forms.Label();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAplicar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lbEjemplar = new System.Windows.Forms.Label();
+            this.lbCorreo = new System.Windows.Forms.Label();
             this.lbLector = new System.Windows.Forms.Label();
             this.lbLibro = new System.Windows.Forms.Label();
             this.txtBoxCorreo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxLector = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxEjemplar = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxLibro = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbFiltros = new System.Windows.Forms.Label();
-            this.lbCorreo = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,60 +58,73 @@ namespace LOMB.Views
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.materialListView1.Depth = 0;
             this.materialListView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.materialListView1.FullRowSelect = true;
             this.materialListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.materialListView1.HideSelection = false;
-            this.materialListView1.Location = new System.Drawing.Point(89, 238);
+            this.materialListView1.Location = new System.Drawing.Point(92, 282);
             this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView1.Name = "materialListView1";
             this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(1014, 516);
-            this.materialListView1.TabIndex = 0;
+            this.materialListView1.Size = new System.Drawing.Size(1020, 489);
+            this.materialListView1.TabIndex = 20;
             this.materialListView1.UseCompatibleStateImageBehavior = false;
             this.materialListView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Ejemplar";
+            this.columnHeader1.Text = "Libro";
             this.columnHeader1.Width = 200;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Lector";
+            this.columnHeader2.Text = "Ejemplar";
             this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader2.Width = 200;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Fecha de préstamo";
+            this.columnHeader3.Text = "Lector";
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 300;
+            this.columnHeader3.Width = 200;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Fecha de devolución";
+            this.columnHeader4.Text = "Fecha préstamo";
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader4.Width = 300;
+            this.columnHeader4.Width = 200;
             // 
-            // btnAplicar
+            // columnHeader5
             // 
-            this.btnAplicar.BorderRadius = 10;
-            this.btnAplicar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAplicar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAplicar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAplicar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAplicar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(135)))), ((int)(((byte)(71)))));
-            this.btnAplicar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnAplicar.ForeColor = System.Drawing.Color.White;
-            this.btnAplicar.Location = new System.Drawing.Point(225, 76);
-            this.btnAplicar.Name = "btnAplicar";
-            this.btnAplicar.Size = new System.Drawing.Size(129, 37);
-            this.btnAplicar.TabIndex = 3;
-            this.btnAplicar.Text = "Aplicar";
+            this.columnHeader5.Text = "Fecha devolución";
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader5.Width = 200;
+            // 
+            // lbTitleHistorial
+            // 
+            this.lbTitleHistorial.AutoSize = true;
+            this.lbTitleHistorial.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitleHistorial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.lbTitleHistorial.Location = new System.Drawing.Point(421, 35);
+            this.lbTitleHistorial.Name = "lbTitleHistorial";
+            this.lbTitleHistorial.Size = new System.Drawing.Size(450, 54);
+            this.lbTitleHistorial.TabIndex = 18;
+            this.lbTitleHistorial.Text = "Historial de préstamos";
+            // 
+            // lbFiltros
+            // 
+            this.lbFiltros.AutoSize = true;
+            this.lbFiltros.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFiltros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.lbFiltros.Location = new System.Drawing.Point(109, 125);
+            this.lbFiltros.Name = "lbFiltros";
+            this.lbFiltros.Size = new System.Drawing.Size(71, 28);
+            this.lbFiltros.TabIndex = 19;
+            this.lbFiltros.Text = "Filtros";
             // 
             // btnLimpiar
             // 
@@ -121,11 +136,27 @@ namespace LOMB.Views
             this.btnLimpiar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
             this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
-            this.btnLimpiar.Location = new System.Drawing.Point(381, 76);
+            this.btnLimpiar.Location = new System.Drawing.Point(385, 116);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(129, 37);
-            this.btnLimpiar.TabIndex = 3;
+            this.btnLimpiar.TabIndex = 15;
             this.btnLimpiar.Text = "Limpiar";
+            // 
+            // btnAplicar
+            // 
+            this.btnAplicar.BorderRadius = 10;
+            this.btnAplicar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAplicar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAplicar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAplicar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAplicar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(135)))), ((int)(((byte)(71)))));
+            this.btnAplicar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnAplicar.ForeColor = System.Drawing.Color.White;
+            this.btnAplicar.Location = new System.Drawing.Point(229, 116);
+            this.btnAplicar.Name = "btnAplicar";
+            this.btnAplicar.Size = new System.Drawing.Size(129, 37);
+            this.btnAplicar.TabIndex = 16;
+            this.btnAplicar.Text = "Aplicar";
             // 
             // guna2Panel1
             // 
@@ -140,10 +171,10 @@ namespace LOMB.Views
             this.guna2Panel1.Controls.Add(this.txtBoxLector);
             this.guna2Panel1.Controls.Add(this.txtBoxEjemplar);
             this.guna2Panel1.Controls.Add(this.txtBoxLibro);
-            this.guna2Panel1.Location = new System.Drawing.Point(89, 119);
+            this.guna2Panel1.Location = new System.Drawing.Point(93, 159);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(666, 113);
-            this.guna2Panel1.TabIndex = 7;
+            this.guna2Panel1.TabIndex = 17;
             // 
             // lbEjemplar
             // 
@@ -155,6 +186,17 @@ namespace LOMB.Views
             this.lbEjemplar.Size = new System.Drawing.Size(95, 28);
             this.lbEjemplar.TabIndex = 8;
             this.lbEjemplar.Text = "Ejemplar";
+            // 
+            // lbCorreo
+            // 
+            this.lbCorreo.AutoSize = true;
+            this.lbCorreo.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.lbCorreo.Location = new System.Drawing.Point(361, 66);
+            this.lbCorreo.Name = "lbCorreo";
+            this.lbCorreo.Size = new System.Drawing.Size(75, 28);
+            this.lbCorreo.TabIndex = 8;
+            this.lbCorreo.Text = "Correo";
             // 
             // lbLector
             // 
@@ -254,39 +296,18 @@ namespace LOMB.Views
             this.txtBoxLibro.Size = new System.Drawing.Size(190, 32);
             this.txtBoxLibro.TabIndex = 6;
             // 
-            // lbFiltros
-            // 
-            this.lbFiltros.AutoSize = true;
-            this.lbFiltros.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFiltros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
-            this.lbFiltros.Location = new System.Drawing.Point(105, 85);
-            this.lbFiltros.Name = "lbFiltros";
-            this.lbFiltros.Size = new System.Drawing.Size(71, 28);
-            this.lbFiltros.TabIndex = 8;
-            this.lbFiltros.Text = "Filtros";
-            // 
-            // lbCorreo
-            // 
-            this.lbCorreo.AutoSize = true;
-            this.lbCorreo.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
-            this.lbCorreo.Location = new System.Drawing.Point(361, 66);
-            this.lbCorreo.Name = "lbCorreo";
-            this.lbCorreo.Size = new System.Drawing.Size(75, 28);
-            this.lbCorreo.TabIndex = 8;
-            this.lbCorreo.Text = "Correo";
-            // 
             // HistorialPrestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(222)))), ((int)(((byte)(181)))));
             this.ClientSize = new System.Drawing.Size(1234, 766);
+            this.Controls.Add(this.materialListView1);
+            this.Controls.Add(this.lbTitleHistorial);
             this.Controls.Add(this.lbFiltros);
-            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAplicar);
-            this.Controls.Add(this.materialListView1);
+            this.Controls.Add(this.guna2Panel1);
             this.Name = "HistorialPrestamo";
             this.Text = "HistorialPrestamo";
             this.guna2Panel1.ResumeLayout(false);
@@ -303,17 +324,19 @@ namespace LOMB.Views
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private Guna.UI2.WinForms.Guna2Button btnAplicar;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Label lbTitleHistorial;
+        private System.Windows.Forms.Label lbFiltros;
         private Guna.UI2.WinForms.Guna2Button btnLimpiar;
+        private Guna.UI2.WinForms.Guna2Button btnAplicar;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label lbEjemplar;
+        private System.Windows.Forms.Label lbCorreo;
+        private System.Windows.Forms.Label lbLector;
+        private System.Windows.Forms.Label lbLibro;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxCorreo;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxLector;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxEjemplar;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxLibro;
-        private System.Windows.Forms.Label lbFiltros;
-        private System.Windows.Forms.Label lbEjemplar;
-        private System.Windows.Forms.Label lbLector;
-        private System.Windows.Forms.Label lbLibro;
-        private System.Windows.Forms.Label lbCorreo;
     }
 }

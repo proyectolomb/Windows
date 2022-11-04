@@ -192,5 +192,15 @@ namespace LOMB
         {
             Application.Exit();
         }
+
+        private void pctLogout_MouseEnter(object sender, EventArgs e)
+        {
+            pctLogout.BackColor = Color.FromArgb(255, 190, 118);
+        }
+
+        private void pctLogout_MouseLeave(object sender, EventArgs e)
+        {
+            pctLogout.BackColor = Color.FromArgb(253, 247, 237);
+        }
     }
 }
