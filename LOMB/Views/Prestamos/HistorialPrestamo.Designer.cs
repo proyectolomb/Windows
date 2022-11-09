@@ -222,6 +222,7 @@ namespace LOMB.Views
             // 
             // txtBoxCorreo
             // 
+            this.txtBoxCorreo.BorderRadius = 5;
             this.txtBoxCorreo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxCorreo.DefaultText = "";
             this.txtBoxCorreo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -241,6 +242,7 @@ namespace LOMB.Views
             // 
             // txtBoxLector
             // 
+            this.txtBoxLector.BorderRadius = 5;
             this.txtBoxLector.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxLector.DefaultText = "";
             this.txtBoxLector.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -260,6 +262,7 @@ namespace LOMB.Views
             // 
             // txtBoxEjemplar
             // 
+            this.txtBoxEjemplar.BorderRadius = 5;
             this.txtBoxEjemplar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxEjemplar.DefaultText = "";
             this.txtBoxEjemplar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -279,6 +282,7 @@ namespace LOMB.Views
             // 
             // txtBoxLibro
             // 
+            this.txtBoxLibro.BorderRadius = 5;
             this.txtBoxLibro.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxLibro.DefaultText = "";
             this.txtBoxLibro.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

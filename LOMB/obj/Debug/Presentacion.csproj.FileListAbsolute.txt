@@ -19,3 +19,7 @@ G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.Home.resources
 G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.ListadoLibro.resources
 G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.HistorialPrestamo.resources
 G:\DUAL\2\DI\Proyectos\LOMB\LOMB\bin\Debug\Guna.UI2.dll
+G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.NuevoLibro.resources
+G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.Libros.ListadoAutores.resources
+G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.Lectores.NuevoLector.resources
+G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.Lectores.ListadoLectores.resources

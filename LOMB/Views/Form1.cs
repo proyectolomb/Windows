@@ -101,12 +101,15 @@ namespace LOMB
         #region LibroSubMenu
         private void btnNuevoLibro_Click(object sender, EventArgs e)
         {
+            Views.NuevoLibro frmNuevoLibro = new Views.NuevoLibro();
+            openChildForm(frmNuevoLibro);
             hideSubMenu();
         }
 
         private void btnAutores_Click(object sender, EventArgs e)
         {
-            /***TO-DO: IR A PAGINA***/
+            Views.Libros.ListadoAutores frmListadoAutores = new Views.Libros.ListadoAutores();
+            openChildForm(frmListadoAutores);
             hideSubMenu();
         }
 
@@ -125,13 +128,15 @@ namespace LOMB
         #region LectorSubMenu
         private void btnNuevoLector_Click(object sender, EventArgs e)
         {
-            /***TO-DO: IR A PAGINA***/
+            Views.Lectores.NuevoLector frmNuevoLector = new Views.Lectores.NuevoLector();
+            openChildForm(frmNuevoLector);
             hideSubMenu();
         }
 
         private void btnListadoLectores_Click(object sender, EventArgs e)
         {
-            /***TO-DO: IR A PAGINA***/
+            Views.Lectores.ListadoLectores frmListadoLectores = new Views.Lectores.ListadoLectores();
+            openChildForm(frmListadoLectores);
             hideSubMenu();
         }
         #endregion

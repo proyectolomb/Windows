@@ -48,6 +48,7 @@ namespace LOMB.Views
             // cmbBoxEjemplar
             // 
             this.cmbBoxEjemplar.BackColor = System.Drawing.Color.Transparent;
+            this.cmbBoxEjemplar.BorderRadius = 5;
             this.cmbBoxEjemplar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbBoxEjemplar.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbBoxEjemplar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -97,6 +98,7 @@ namespace LOMB.Views
             // 
             // txtBoxLibro
             // 
+            this.txtBoxLibro.BorderRadius = 5;
             this.txtBoxLibro.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxLibro.DefaultText = "";
             this.txtBoxLibro.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -128,6 +130,7 @@ namespace LOMB.Views
             // cmbBoxLector
             // 
             this.cmbBoxLector.BackColor = System.Drawing.Color.Transparent;
+            this.cmbBoxLector.BorderRadius = 5;
             this.cmbBoxLector.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbBoxLector.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbBoxLector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -144,6 +147,7 @@ namespace LOMB.Views
             // 
             // txtBoxOutput
             // 
+            this.txtBoxOutput.BorderRadius = 5;
             this.txtBoxOutput.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxOutput.DefaultText = "USUARIO_LLAMADA_API";
             this.txtBoxOutput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

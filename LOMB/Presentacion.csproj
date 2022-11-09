@@ -56,10 +56,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\Devolucion.cs">
+    <Compile Include="Views\Lectores\ListadoLectores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Devolucion.Designer.cs">
+    <Compile Include="Views\Lectores\ListadoLectores.Designer.cs">
+      <DependentUpon>ListadoLectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Lectores\NuevoLector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Lectores\NuevoLector.Designer.cs">
+      <DependentUpon>NuevoLector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Libros\ListadoAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Libros\ListadoAutores.Designer.cs">
+      <DependentUpon>ListadoAutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Prestamos\Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Prestamos\Devolucion.Designer.cs">
       <DependentUpon>Devolucion.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Form1.cs">
@@ -70,10 +88,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\HistorialPrestamo.cs">
+    <Compile Include="Views\Prestamos\HistorialPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HistorialPrestamo.Designer.cs">
+    <Compile Include="Views\Prestamos\HistorialPrestamo.Designer.cs">
       <DependentUpon>HistorialPrestamo.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Home.cs">
@@ -82,22 +100,28 @@
     <Compile Include="Views\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListadoLibro.cs">
+    <Compile Include="Views\Libros\ListadoLibro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\ListadoLibro.Designer.cs">
+    <Compile Include="Views\Libros\ListadoLibro.Designer.cs">
       <DependentUpon>ListadoLibro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\NuevoPrestamo.cs">
+    <Compile Include="Views\Libros\NuevoLibro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\NuevoPrestamo.Designer.cs">
+    <Compile Include="Views\Libros\NuevoLibro.Designer.cs">
+      <DependentUpon>NuevoLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Prestamos\NuevoPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Prestamos\NuevoPrestamo.Designer.cs">
       <DependentUpon>NuevoPrestamo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\PrestamosEnCurso.cs">
+    <Compile Include="Views\Prestamos\PrestamosEnCurso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\PrestamosEnCurso.Designer.cs">
+    <Compile Include="Views\Prestamos\PrestamosEnCurso.Designer.cs">
       <DependentUpon>PrestamosEnCurso.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -110,25 +134,37 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\Devolucion.resx">
+    <EmbeddedResource Include="Views\Lectores\ListadoLectores.resx">
+      <DependentUpon>ListadoLectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Lectores\NuevoLector.resx">
+      <DependentUpon>NuevoLector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Libros\ListadoAutores.resx">
+      <DependentUpon>ListadoAutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Prestamos\Devolucion.resx">
       <DependentUpon>Devolucion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HistorialPrestamo.resx">
+    <EmbeddedResource Include="Views\Prestamos\HistorialPrestamo.resx">
       <DependentUpon>HistorialPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ListadoLibro.resx">
+    <EmbeddedResource Include="Views\Libros\ListadoLibro.resx">
       <DependentUpon>ListadoLibro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\NuevoPrestamo.resx">
+    <EmbeddedResource Include="Views\Libros\NuevoLibro.resx">
+      <DependentUpon>NuevoLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Prestamos\NuevoPrestamo.resx">
       <DependentUpon>NuevoPrestamo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\PrestamosEnCurso.resx">
+    <EmbeddedResource Include="Views\Prestamos\PrestamosEnCurso.resx">
       <DependentUpon>PrestamosEnCurso.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -146,12 +182,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\basura.png" />
     <Content Include="Resources\borrar.png" />
     <Content Include="Resources\clock.png" />
     <Content Include="Resources\devolucion.png" />
     <Content Include="Resources\devolver.png" />
     <Content Include="Resources\editar.png" />
     <Content Include="Resources\ies-comercio %281%29.ico" />
+    <Content Include="Resources\lapiz.png" />
     <Content Include="Resources\libro.png" />
     <Content Include="Resources\logout.png" />
     <Content Include="Resources\nuevo-prestamo.png" />
@@ -160,5 +198,6 @@
     <Content Include="Resources\return.png" />
     <Content Include="Resources\usuario.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -124,7 +124,7 @@ namespace LOMB
             this.lbUsuario.AutoSize = true;
             this.lbUsuario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
-            this.lbUsuario.Location = new System.Drawing.Point(33, 19);
+            this.lbUsuario.Location = new System.Drawing.Point(33, 21);
             this.lbUsuario.Name = "lbUsuario";
             this.lbUsuario.Size = new System.Drawing.Size(107, 20);
             this.lbUsuario.TabIndex = 9;
