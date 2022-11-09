@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\borrar.png" />
+    <Content Include="Resources\clock.png" />
     <Content Include="Resources\devolucion.png" />
     <Content Include="Resources\devolver.png" />
     <Content Include="Resources\editar.png" />
@@ -156,6 +157,7 @@
     <Content Include="Resources\nuevo-prestamo.png" />
     <Content Include="Resources\prestamos-en-curso.png" />
     <Content Include="Resources\ies-comercio.png" />
+    <Content Include="Resources\return.png" />
     <Content Include="Resources\usuario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
