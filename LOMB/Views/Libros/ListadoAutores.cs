@@ -16,5 +16,12 @@ namespace LOMB.Views.Libros
         {
             InitializeComponent();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBoxNombre.Text = string.Empty;
+            txtBoxApellidos.Text = string.Empty;
+            cmbBoxCategoria.Items.Clear();
+        }
     }
 }

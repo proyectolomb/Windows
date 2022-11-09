@@ -32,5 +32,17 @@ namespace LOMB.Views.Lectores
 
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBoxNombre.Text = "";
+            txtBoxCorreo.Text = "";
+            txtBoxApellidos.Text = "";
+            cmbBoxCursoAlumno.Items.Clear();
+        }
+
+        private void cmbBoxCursoAlumno_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

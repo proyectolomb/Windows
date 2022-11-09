@@ -221,6 +221,7 @@ namespace LOMB.Views
             this.btnLimpiar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnLimpiar.BorderRadius = 10;
             this.btnLimpiar.BorderThickness = 2;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -233,10 +234,12 @@ namespace LOMB.Views
             this.btnLimpiar.Size = new System.Drawing.Size(153, 44);
             this.btnLimpiar.TabIndex = 22;
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnAniadir
             // 
             this.btnAniadir.BorderRadius = 10;
+            this.btnAniadir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAniadir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAniadir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAniadir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -270,7 +273,7 @@ namespace LOMB.Views
             this.Controls.Add(this.lbLibro);
             this.Controls.Add(this.txtBoxOutput);
             this.Controls.Add(this.txtBoxLibro);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "NuevoPrestamo";
             this.Text = "NuevoPrestamo";
             this.ResumeLayout(false);

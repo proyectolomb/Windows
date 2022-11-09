@@ -378,6 +378,7 @@ namespace LOMB.Views.Lectores
             this.btnLimpiar.Size = new System.Drawing.Size(129, 37);
             this.btnLimpiar.TabIndex = 47;
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnAplicar
             // 
@@ -534,6 +535,7 @@ namespace LOMB.Views.Lectores
             this.cmbBoxCursoAlumno.Name = "cmbBoxCursoAlumno";
             this.cmbBoxCursoAlumno.Size = new System.Drawing.Size(190, 36);
             this.cmbBoxCursoAlumno.TabIndex = 31;
+            this.cmbBoxCursoAlumno.SelectedIndexChanged += new System.EventHandler(this.cmbBoxCursoAlumno_SelectedIndexChanged);
             // 
             // lbCorreo
             // 

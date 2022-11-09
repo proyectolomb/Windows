@@ -41,13 +41,13 @@ namespace LOMB.Views
             this.lbEditorial = new System.Windows.Forms.Label();
             this.txtBoxEditorial = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbFechaPublicacion = new System.Windows.Forms.Label();
-            this.txtBoxFechaPublicacion = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbIdioma = new System.Windows.Forms.Label();
             this.cmbBoxIdioma = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
             this.btnAniadir = new Guna.UI2.WinForms.Guna2Button();
             this.lbEjemplar = new System.Windows.Forms.Label();
             this.btnNuevoEjemplar = new Guna.UI2.WinForms.Guna2Button();
+            this.dateNacimiento = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SuspendLayout();
             // 
             // cmbBoxAutor
@@ -231,26 +231,6 @@ namespace LOMB.Views
             this.lbFechaPublicacion.TabIndex = 33;
             this.lbFechaPublicacion.Text = "Fecha de publicacion";
             // 
-            // txtBoxFechaPublicacion
-            // 
-            this.txtBoxFechaPublicacion.BorderRadius = 5;
-            this.txtBoxFechaPublicacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxFechaPublicacion.DefaultText = "";
-            this.txtBoxFechaPublicacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBoxFechaPublicacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBoxFechaPublicacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxFechaPublicacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxFechaPublicacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxFechaPublicacion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBoxFechaPublicacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxFechaPublicacion.Location = new System.Drawing.Point(272, 546);
-            this.txtBoxFechaPublicacion.Name = "txtBoxFechaPublicacion";
-            this.txtBoxFechaPublicacion.PasswordChar = '\0';
-            this.txtBoxFechaPublicacion.PlaceholderText = "dd/mm/aaaa";
-            this.txtBoxFechaPublicacion.SelectedText = "";
-            this.txtBoxFechaPublicacion.Size = new System.Drawing.Size(243, 32);
-            this.txtBoxFechaPublicacion.TabIndex = 32;
-            // 
             // lbIdioma
             // 
             this.lbIdioma.AutoSize = true;
@@ -288,6 +268,7 @@ namespace LOMB.Views
             this.btnLimpiar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnLimpiar.BorderRadius = 10;
             this.btnLimpiar.BorderThickness = 2;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -300,10 +281,12 @@ namespace LOMB.Views
             this.btnLimpiar.Size = new System.Drawing.Size(153, 44);
             this.btnLimpiar.TabIndex = 37;
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnAniadir
             // 
             this.btnAniadir.BorderRadius = 10;
+            this.btnAniadir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAniadir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAniadir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAniadir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -333,6 +316,7 @@ namespace LOMB.Views
             this.btnNuevoEjemplar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnNuevoEjemplar.BorderRadius = 20;
             this.btnNuevoEjemplar.BorderThickness = 2;
+            this.btnNuevoEjemplar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevoEjemplar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnNuevoEjemplar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnNuevoEjemplar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -346,12 +330,30 @@ namespace LOMB.Views
             this.btnNuevoEjemplar.TabIndex = 40;
             this.btnNuevoEjemplar.Text = "Nuevo ejemplar";
             // 
+            // dateNacimiento
+            // 
+            this.dateNacimiento.Animated = true;
+            this.dateNacimiento.BackColor = System.Drawing.Color.Transparent;
+            this.dateNacimiento.BorderColor = System.Drawing.Color.White;
+            this.dateNacimiento.BorderRadius = 5;
+            this.dateNacimiento.FillColor = System.Drawing.Color.White;
+            this.dateNacimiento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateNacimiento.Location = new System.Drawing.Point(272, 546);
+            this.dateNacimiento.MaxDate = new System.DateTime(3000, 1, 1, 0, 0, 0, 0);
+            this.dateNacimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateNacimiento.Name = "dateNacimiento";
+            this.dateNacimiento.Size = new System.Drawing.Size(243, 36);
+            this.dateNacimiento.TabIndex = 48;
+            this.dateNacimiento.Value = new System.DateTime(2022, 11, 9, 0, 0, 0, 0);
+            // 
             // NuevoLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(222)))), ((int)(((byte)(181)))));
             this.ClientSize = new System.Drawing.Size(1173, 778);
+            this.Controls.Add(this.dateNacimiento);
             this.Controls.Add(this.btnNuevoEjemplar);
             this.Controls.Add(this.lbEjemplar);
             this.Controls.Add(this.btnLimpiar);
@@ -359,7 +361,6 @@ namespace LOMB.Views
             this.Controls.Add(this.cmbBoxIdioma);
             this.Controls.Add(this.lbIdioma);
             this.Controls.Add(this.lbFechaPublicacion);
-            this.Controls.Add(this.txtBoxFechaPublicacion);
             this.Controls.Add(this.lbEditorial);
             this.Controls.Add(this.txtBoxEditorial);
             this.Controls.Add(this.cmbBoxCategoria);
@@ -392,12 +393,12 @@ namespace LOMB.Views
         private System.Windows.Forms.Label lbEditorial;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxEditorial;
         private System.Windows.Forms.Label lbFechaPublicacion;
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxFechaPublicacion;
         private System.Windows.Forms.Label lbIdioma;
         private Guna.UI2.WinForms.Guna2ComboBox cmbBoxIdioma;
         private Guna.UI2.WinForms.Guna2Button btnLimpiar;
         private Guna.UI2.WinForms.Guna2Button btnAniadir;
         private System.Windows.Forms.Label lbEjemplar;
         private Guna.UI2.WinForms.Guna2Button btnNuevoEjemplar;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateNacimiento;
     }
 }

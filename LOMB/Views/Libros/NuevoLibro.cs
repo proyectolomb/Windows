@@ -16,5 +16,16 @@ namespace LOMB.Views
         {
             InitializeComponent();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBoxIsbn.Text = string.Empty;
+            txtBoxNombre.Text = string.Empty;
+            cmbBoxAutor.Items.Clear();
+            cmbBoxCategoria.Items.Clear();
+            txtBoxEditorial.Text = string.Empty;
+            dateNacimiento.ResetText();
+            cmbBoxIdioma.Items.Clear();
+        }
     }
 }

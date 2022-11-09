@@ -27,5 +27,11 @@ namespace LOMB.Views
 
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBoxLibro.Text = string.Empty;
+            cmbBoxEjemplar.Items.Clear();
+            cmbBoxLector.Items.Clear();
+        }
     }
 }

@@ -80,6 +80,7 @@ namespace LOMB.Views
             // btnDevolver
             // 
             this.btnDevolver.BorderRadius = 10;
+            this.btnDevolver.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDevolver.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDevolver.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDevolver.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

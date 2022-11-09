@@ -129,6 +129,7 @@ namespace LOMB.Views
             // btnLimpiar
             // 
             this.btnLimpiar.BorderRadius = 10;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -141,10 +142,12 @@ namespace LOMB.Views
             this.btnLimpiar.Size = new System.Drawing.Size(129, 37);
             this.btnLimpiar.TabIndex = 15;
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnAplicar
             // 
             this.btnAplicar.BorderRadius = 10;
+            this.btnAplicar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAplicar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAplicar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAplicar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

@@ -22,5 +22,13 @@ namespace LOMB.Views.Lectores
 
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBoxNombre.Text = string.Empty;
+            txtBoxApellidos.Text = string.Empty;
+            txtBoxCorreo.Text = string.Empty;
+            cmbBoxCategoria.Items.Clear();
+            dateNacimiento.ResetText();
+        }
     }
 }

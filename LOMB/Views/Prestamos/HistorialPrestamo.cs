@@ -17,5 +17,12 @@ namespace LOMB.Views
             InitializeComponent();
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBoxLibro.Text = string.Empty;
+            txtBoxLector.Text = string.Empty;
+            txtBoxEjemplar.Text = string.Empty;
+            txtBoxCorreo.Text = string.Empty;
+        }
     }
 }

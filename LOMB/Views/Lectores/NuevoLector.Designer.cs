@@ -38,13 +38,13 @@ namespace LOMB.Views.Lectores
             this.lbApellidos = new System.Windows.Forms.Label();
             this.txtBoxApellidos = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbFechaNac = new System.Windows.Forms.Label();
-            this.txtBoxFechaNac = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
             this.btnAniadir = new Guna.UI2.WinForms.Guna2Button();
             this.lbAlumno = new System.Windows.Forms.Label();
             this.radBtnAlumno = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.lbProfesor = new System.Windows.Forms.Label();
             this.radBtnProfesor = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.dateNacimiento = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SuspendLayout();
             // 
             // cmbBoxCategoria
@@ -184,31 +184,12 @@ namespace LOMB.Views.Lectores
             this.lbFechaNac.TabIndex = 40;
             this.lbFechaNac.Text = "Fecha de nacimiento";
             // 
-            // txtBoxFechaNac
-            // 
-            this.txtBoxFechaNac.BorderRadius = 5;
-            this.txtBoxFechaNac.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxFechaNac.DefaultText = "";
-            this.txtBoxFechaNac.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBoxFechaNac.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBoxFechaNac.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxFechaNac.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxFechaNac.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxFechaNac.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBoxFechaNac.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxFechaNac.Location = new System.Drawing.Point(830, 308);
-            this.txtBoxFechaNac.Name = "txtBoxFechaNac";
-            this.txtBoxFechaNac.PasswordChar = '\0';
-            this.txtBoxFechaNac.PlaceholderText = "dd/mm/aaaa";
-            this.txtBoxFechaNac.SelectedText = "";
-            this.txtBoxFechaNac.Size = new System.Drawing.Size(243, 32);
-            this.txtBoxFechaNac.TabIndex = 39;
-            // 
             // btnLimpiar
             // 
             this.btnLimpiar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.btnLimpiar.BorderRadius = 10;
             this.btnLimpiar.BorderThickness = 2;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -221,10 +202,12 @@ namespace LOMB.Views.Lectores
             this.btnLimpiar.Size = new System.Drawing.Size(153, 44);
             this.btnLimpiar.TabIndex = 41;
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnAniadir
             // 
             this.btnAniadir.BorderRadius = 10;
+            this.btnAniadir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAniadir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAniadir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAniadir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -300,12 +283,28 @@ namespace LOMB.Views.Lectores
             this.radBtnProfesor.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.radBtnProfesor.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
+            // dateNacimiento
+            // 
+            this.dateNacimiento.Animated = true;
+            this.dateNacimiento.BorderRadius = 5;
+            this.dateNacimiento.FillColor = System.Drawing.Color.White;
+            this.dateNacimiento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateNacimiento.Location = new System.Drawing.Point(821, 312);
+            this.dateNacimiento.MaxDate = new System.DateTime(3000, 12, 31, 0, 0, 0, 0);
+            this.dateNacimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateNacimiento.Name = "dateNacimiento";
+            this.dateNacimiento.Size = new System.Drawing.Size(243, 36);
+            this.dateNacimiento.TabIndex = 47;
+            this.dateNacimiento.Value = new System.DateTime(2022, 11, 9, 19, 20, 10, 153);
+            // 
             // NuevoLector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(222)))), ((int)(((byte)(181)))));
             this.ClientSize = new System.Drawing.Size(1173, 778);
+            this.Controls.Add(this.dateNacimiento);
             this.Controls.Add(this.lbProfesor);
             this.Controls.Add(this.radBtnProfesor);
             this.Controls.Add(this.lbAlumno);
@@ -313,7 +312,6 @@ namespace LOMB.Views.Lectores
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAniadir);
             this.Controls.Add(this.lbFechaNac);
-            this.Controls.Add(this.txtBoxFechaNac);
             this.Controls.Add(this.lbApellidos);
             this.Controls.Add(this.txtBoxApellidos);
             this.Controls.Add(this.lblCorreo);
@@ -340,12 +338,12 @@ namespace LOMB.Views.Lectores
         private System.Windows.Forms.Label lbApellidos;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxApellidos;
         private System.Windows.Forms.Label lbFechaNac;
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxFechaNac;
         private Guna.UI2.WinForms.Guna2Button btnLimpiar;
         private Guna.UI2.WinForms.Guna2Button btnAniadir;
         private System.Windows.Forms.Label lbAlumno;
         private Guna.UI2.WinForms.Guna2CustomRadioButton radBtnAlumno;
         private System.Windows.Forms.Label lbProfesor;
         private Guna.UI2.WinForms.Guna2CustomRadioButton radBtnProfesor;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateNacimiento;
     }
 }
