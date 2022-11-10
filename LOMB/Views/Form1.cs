@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LOMB.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,13 @@ namespace LOMB
 {
     public partial class Form1 : Form
     {
+        public static List<Libro> libros; // Propiedad global por sí se cae la API
 
         public Form1()
         {
             InitializeComponent();
             customizeDesign();
+            libros = null;
             //this.MaximizeBox = false;
             //this.WindowState = FormWindowState.Maximized;
             //this.TopMost = true;
@@ -25,6 +28,11 @@ namespace LOMB
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.MinimizeBox = false;
             this.MaximizeBox = false;
+        }
+
+        public static void instanciaLibros(List<Libro> librosPasado)
+        {
+            libros = librosPasado;
         }
 
         private void customizeDesign()
