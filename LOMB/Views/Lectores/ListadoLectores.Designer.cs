@@ -29,6 +29,7 @@ namespace LOMB.Views.Lectores
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListadoLectores));
             this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
@@ -63,6 +64,7 @@ namespace LOMB.Views.Lectores
             this.lbNombre = new System.Windows.Forms.Label();
             this.txtBoxCorreo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxNombre = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -669,5 +671,6 @@ namespace LOMB.Views.Lectores
         private Guna.UI2.WinForms.Guna2TextBox txtBoxNombre;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxApellidos;
         private System.Windows.Forms.Label lbApellidos;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

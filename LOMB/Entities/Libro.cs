@@ -11,7 +11,7 @@ namespace LOMB.Entities
         public string isbn { get; set; }
         public string nombre { get; set; }
         public string fecha_publicacion { get; set; }
-        public List<Autor> autor { get; set; }
+        public List<Autor> autores { get; set; }
         public Idioma idioma { get; set; }
         public Editorial editorial { get; set; }
 

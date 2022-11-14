@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using LOMB.Entities;
 using MaterialSkin;
-using Dapper;
+using System;
+using System.Collections.Generic;
 using System.Net.Http;
-using LOMB.Entities;
+using System.Windows.Forms;
 
 namespace LOMB.Views
 {
@@ -27,27 +18,41 @@ namespace LOMB.Views
             skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             skinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green900, Primary.Green900, Accent.LightBlue200, TextShade.WHITE)*/
         }
-        void peticionLibro()
+        void getLibro()
         {
             using (var client = new HttpClient())
             {
                 string url = "http://10.2.2.15:5000/api/v1/libro";
                 client.DefaultRequestHeaders.Clear();
 
+                string autores = "";
+
                 if (Form1.libros == null) // Si el libro no tiene nada, hace la petición
                 {
                     var response = client.GetAsync(url).Result;
                     var res = response.Content.ReadAsStringAsync().Result;
-                    materialListView1.Items.Clear();
+                    matListview.Items.Clear();
 
                     List<Libro> libros = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Libro>>(res);
-                    Form1.instanciaLibros(libros); // Le pasa la lista que acaba de obtener de 
+                    Form1.instanciaLibros(libros); // Le pasa la lista que acaba de obtener de la 
 
                     foreach (var val in libros) // Recorre variable local
                     {
                         ListViewItem item = new ListViewItem(val.isbn.ToString());
                         item.SubItems.Add(val.nombre.ToString());
-                        materialListView1.Items.Add(item);
+
+                        // AUTOR -> recorre cada autor del valor actual del bucle
+                        foreach (var autor in val.autores)
+                        {
+                            autores += autor.nombre + " "; // Y lo añade a los autores que ya hay (si es que tiene)
+                        }
+                        item.SubItems.Add(autores);
+
+                        //item.SubItems.Add(val.categoria.ToString());
+                        item.SubItems.Add(val.editorial.nombre.ToString());
+                        item.SubItems.Add(val.fecha_publicacion.ToString());
+                        //item.SubItems.Add(val.ejemplares.ToString());
+                        matListview.Items.Add(item);
                     }
                 } else // En caso contrario, carga lo que ya hay (ya se había cargado previamente)
                 {
@@ -55,7 +60,19 @@ namespace LOMB.Views
                     {
                         ListViewItem item = new ListViewItem(val.isbn.ToString());
                         item.SubItems.Add(val.nombre.ToString());
-                        materialListView1.Items.Add(item);
+
+                        // AUTOR -> recorre cada autor del valor actual del bucle
+                        foreach (var autor in val.autores)
+                        {
+                            autores += autor.nombre + " "; // Y lo añade a los autores que ya hay (si es que tiene)
+                        }
+                        item.SubItems.Add(autores);
+
+                        //item.SubItems.Add(val.categoria.ToString());
+                        item.SubItems.Add(val.editorial.nombre.ToString());
+                        item.SubItems.Add(val.fecha_publicacion.ToString());
+                        //item.SubItems.Add(val.ejemplares.ToString());
+                        matListview.Items.Add(item);
                     }
                 }
             }
@@ -68,7 +85,7 @@ namespace LOMB.Views
 
         private void ListadoLibro_Load(object sender, EventArgs e)
         {
-            peticionLibro();
+            getLibro();
         }
     }
 }
