@@ -16,6 +16,7 @@ namespace LOMB
         public static List<Libro> libros; // Propiedad global por sí se cae la API
         public static List<Lector> lectores;
         public static List<Autor> autores;
+        public static List<Prestamo> prestamos;
 
         public Form1()
         {
@@ -24,6 +25,7 @@ namespace LOMB
             libros = null;
             lectores = null;
             autores = null;
+            prestamos = null;
             //this.MaximizeBox = false;
             //this.WindowState = FormWindowState.Maximized;
             //this.TopMost = true;
@@ -45,6 +47,10 @@ namespace LOMB
         public static void instanciaAutores(List<Autor> autoresPasado)
         {
             autores = autoresPasado;
+        }
+        public static void instanciaPrestamos(List<Prestamo> prestamosPasado)
+        {
+            prestamos = prestamosPasado;
         }
 
         private void customizeDesign()

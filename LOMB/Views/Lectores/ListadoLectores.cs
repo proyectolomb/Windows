@@ -18,7 +18,7 @@ namespace LOMB.Views.Lectores
         {
             using (var client = new HttpClient())
             {
-                string url = "http://10.2.2.15:5000/api/v1/prestamo";
+                string url = "http://10.2.2.15:5000/api/v1/lector";
                 client.DefaultRequestHeaders.Clear();
 
                 if (Form1.lectores == null) // Si el lector no tiene nada, hace la petición

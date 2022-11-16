@@ -42,7 +42,7 @@ namespace LOMB.Views
             this.txtBoxEjemplar = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxLibro = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
+            this.matListView = new MaterialSkin.Controls.MaterialListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -252,30 +252,30 @@ namespace LOMB.Views
             this.guna2Panel1.Size = new System.Drawing.Size(666, 113);
             this.guna2Panel1.TabIndex = 12;
             // 
-            // materialListView1
+            // matListView
             // 
-            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.matListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.matListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.matListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
-            this.materialListView1.Depth = 0;
-            this.materialListView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.materialListView1.HideSelection = false;
-            this.materialListView1.Location = new System.Drawing.Point(94, 276);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(946, 489);
-            this.materialListView1.TabIndex = 14;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
+            this.matListView.Depth = 0;
+            this.matListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.matListView.FullRowSelect = true;
+            this.matListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.matListView.HideSelection = false;
+            this.matListView.Location = new System.Drawing.Point(94, 276);
+            this.matListView.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.matListView.MouseState = MaterialSkin.MouseState.OUT;
+            this.matListView.Name = "matListView";
+            this.matListView.OwnerDraw = true;
+            this.matListView.Size = new System.Drawing.Size(946, 489);
+            this.matListView.TabIndex = 14;
+            this.matListView.UseCompatibleStateImageBehavior = false;
+            this.matListView.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -563,7 +563,7 @@ namespace LOMB.Views
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.materialListView1);
+            this.Controls.Add(this.matListView);
             this.Controls.Add(this.lbTitleHistorial);
             this.Controls.Add(this.lbFiltros);
             this.Controls.Add(this.btnLimpiar);
@@ -571,6 +571,7 @@ namespace LOMB.Views
             this.Controls.Add(this.guna2Panel1);
             this.Name = "PrestamosEnCurso";
             this.Text = "PrestamosEnCurso";
+            this.Load += new System.EventHandler(this.PrestamosEnCurso_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -592,7 +593,7 @@ namespace LOMB.Views
         private Guna.UI2.WinForms.Guna2TextBox txtBoxEjemplar;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxLibro;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private MaterialSkin.Controls.MaterialListView materialListView1;
+        private MaterialSkin.Controls.MaterialListView matListView;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;

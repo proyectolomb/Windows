@@ -17,7 +17,7 @@ namespace LOMB.Views.Libros
         {
             using (var client = new HttpClient())
             {
-                string url = "http://10.2.2.15:5000/api/v1/libro";
+                string url = "http://10.2.2.15:5000/api/v1/autor";
                 client.DefaultRequestHeaders.Clear();
 
                 if (Form1.autores == null) // Si el libro no tiene nada, hace la petición
