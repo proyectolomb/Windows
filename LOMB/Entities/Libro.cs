@@ -14,6 +14,7 @@ namespace LOMB.Entities
         public List<Autor> autores { get; set; }
         public Idioma idioma { get; set; }
         public Editorial editorial { get; set; }
+        public List<Categoria> categorias { get; set; }
 
         public override string ToString()
         {

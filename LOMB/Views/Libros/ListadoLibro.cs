@@ -25,7 +25,7 @@ namespace LOMB.Views
                 string url = "http://10.2.2.15:5000/api/v1/libro";
                 client.DefaultRequestHeaders.Clear();
 
-                string autores = "";
+                string autores = "", categorias = "";
 
                 if (Form1.libros == null) // Si el libro no tiene nada, hace la petición
                 {
@@ -36,19 +36,26 @@ namespace LOMB.Views
                     List<Libro> libros = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Libro>>(res);
                     Form1.instanciaLibros(libros); // Le pasa la lista que acaba de obtener de la 
 
-                    foreach (var val in libros) // Recorre variable local
+                    foreach (var val in libros)
                     {
                         ListViewItem item = new ListViewItem(val.isbn.ToString());
                         item.SubItems.Add(val.nombre.ToString());
 
                         // AUTOR -> recorre cada autor del valor actual del bucle
+                        autores = ""; // Se deja vacío para meter valores nuevos
                         foreach (var autor in val.autores)
                         {
                             autores += autor.nombre + " "; // Y lo añade a los autores que ya hay (si es que tiene)
                         }
                         item.SubItems.Add(autores);
 
-                        //item.SubItems.Add(val.categoria.ToString());
+                        // CATEGORÍA
+                        categorias = "";
+                        foreach (var categoria in val.categorias)
+                        {
+                            categorias += categoria.nombre + " "; // Y lo añade a los autores que ya hay (si es que tiene)
+                        }
+                        item.SubItems.Add(categorias);
                         item.SubItems.Add(val.editorial.nombre.ToString());
                         item.SubItems.Add(val.fecha_publicacion.ToString());
                         //item.SubItems.Add(val.ejemplares.ToString());
@@ -62,13 +69,20 @@ namespace LOMB.Views
                         item.SubItems.Add(val.nombre.ToString());
 
                         // AUTOR -> recorre cada autor del valor actual del bucle
+                        autores = ""; // Se deja vacío para meter valores nuevos
                         foreach (var autor in val.autores)
                         {
                             autores += autor.nombre + " "; // Y lo añade a los autores que ya hay (si es que tiene)
                         }
                         item.SubItems.Add(autores);
 
-                        //item.SubItems.Add(val.categoria.ToString());
+                        // CATEGORÍA
+                        categorias = "";
+                        foreach (var categoria in val.categorias)
+                        {
+                            categorias += categoria.nombre + " "; // Y lo añade a los autores que ya hay (si es que tiene)
+                        }
+                        item.SubItems.Add(categorias);
                         item.SubItems.Add(val.editorial.nombre.ToString());
                         item.SubItems.Add(val.fecha_publicacion.ToString());
                         //item.SubItems.Add(val.ejemplares.ToString());

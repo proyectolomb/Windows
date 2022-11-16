@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Autor.cs" />
+    <Compile Include="Entities\Categoria.cs" />
     <Compile Include="Entities\Editorial.cs" />
     <Compile Include="Entities\Idioma.cs" />
     <Compile Include="Entities\Libro.cs" />

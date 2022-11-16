@@ -14,12 +14,14 @@ namespace LOMB
     public partial class Form1 : Form
     {
         public static List<Libro> libros; // Propiedad global por sí se cae la API
+        public static List<Lector> lectores;
 
         public Form1()
         {
             InitializeComponent();
             customizeDesign();
             libros = null;
+            lectores = null;
             //this.MaximizeBox = false;
             //this.WindowState = FormWindowState.Maximized;
             //this.TopMost = true;
@@ -33,6 +35,10 @@ namespace LOMB
         public static void instanciaLibros(List<Libro> librosPasado)
         {
             libros = librosPasado;
+        }
+        public static void instanciaLectores(List<Lector> lectoresPasado)
+        {
+            lectores = lectoresPasado;
         }
 
         private void customizeDesign()
