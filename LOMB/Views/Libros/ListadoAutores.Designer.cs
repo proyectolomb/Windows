@@ -30,12 +30,11 @@ namespace LOMB.Views.Libros
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListadoAutores));
-            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
+            this.matListView = new MaterialSkin.Controls.MaterialListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbTitleAutores = new System.Windows.Forms.Label();
             this.lbFiltros = new System.Windows.Forms.Label();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
@@ -66,59 +65,53 @@ namespace LOMB.Views.Libros
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // materialListView1
+            // matListView
             // 
-            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.matListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.matListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.matListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.materialListView1.Depth = 0;
-            this.materialListView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.materialListView1.HideSelection = false;
-            this.materialListView1.Location = new System.Drawing.Point(59, 268);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(946, 489);
-            this.materialListView1.TabIndex = 34;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
+            this.columnHeader4});
+            this.matListView.Depth = 0;
+            this.matListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.matListView.FullRowSelect = true;
+            this.matListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.matListView.HideSelection = false;
+            this.matListView.Location = new System.Drawing.Point(59, 268);
+            this.matListView.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.matListView.MouseState = MaterialSkin.MouseState.OUT;
+            this.matListView.Name = "matListView";
+            this.matListView.OwnerDraw = true;
+            this.matListView.Size = new System.Drawing.Size(946, 489);
+            this.matListView.TabIndex = 34;
+            this.matListView.UseCompatibleStateImageBehavior = false;
+            this.matListView.View = System.Windows.Forms.View.Details;
+            this.matListView.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Libro";
+            this.columnHeader1.Text = "Nombre";
             this.columnHeader1.Width = 200;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Ejemplar";
+            this.columnHeader2.Text = "País origen";
             this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader2.Width = 200;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Lector";
+            this.columnHeader3.Text = "Categoría";
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader3.Width = 200;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Fecha préstamo";
+            this.columnHeader4.Text = "Editorial";
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader4.Width = 200;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Fecha devolución";
-            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader5.Width = 200;
             // 
             // lbTitleAutores
             // 
@@ -192,7 +185,7 @@ namespace LOMB.Views.Libros
             this.guna2Panel1.Controls.Add(this.lbNombre);
             this.guna2Panel1.Controls.Add(this.txtBoxApellidos);
             this.guna2Panel1.Controls.Add(this.txtBoxNombre);
-            this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.guna2Panel1.Location = new System.Drawing.Point(60, 145);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(666, 113);
@@ -218,6 +211,7 @@ namespace LOMB.Views.Libros
             this.radBtnEntidad.CheckedState.BorderThickness = 0;
             this.radBtnEntidad.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.radBtnEntidad.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radBtnEntidad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radBtnEntidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.radBtnEntidad.Location = new System.Drawing.Point(168, 69);
             this.radBtnEntidad.Name = "radBtnEntidad";
@@ -249,6 +243,7 @@ namespace LOMB.Views.Libros
             this.radBtnPersona.CheckedState.BorderThickness = 0;
             this.radBtnPersona.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.radBtnPersona.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radBtnPersona.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radBtnPersona.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
             this.radBtnPersona.Location = new System.Drawing.Point(30, 69);
             this.radBtnPersona.Name = "radBtnPersona";
@@ -603,7 +598,7 @@ namespace LOMB.Views.Libros
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.materialListView1);
+            this.Controls.Add(this.matListView);
             this.Controls.Add(this.lbTitleAutores);
             this.Controls.Add(this.lbFiltros);
             this.Controls.Add(this.btnLimpiar);
@@ -611,6 +606,7 @@ namespace LOMB.Views.Libros
             this.Controls.Add(this.guna2Panel1);
             this.Name = "ListadoAutores";
             this.Text = "ListadoAutores";
+            this.Load += new System.EventHandler(this.ListadoAutores_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -632,12 +628,11 @@ namespace LOMB.Views.Libros
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private MaterialSkin.Controls.MaterialListView materialListView1;
+        private MaterialSkin.Controls.MaterialListView matListView;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label lbTitleAutores;
         private System.Windows.Forms.Label lbFiltros;
         private Guna.UI2.WinForms.Guna2Button btnLimpiar;

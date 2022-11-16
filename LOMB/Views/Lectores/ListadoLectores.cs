@@ -21,7 +21,7 @@ namespace LOMB.Views.Lectores
                 string url = "http://10.2.2.15:5000/api/v1/prestamo";
                 client.DefaultRequestHeaders.Clear();
 
-                if (Form1.libros == null) // Si el lector no tiene nada, hace la petición
+                if (Form1.lectores == null) // Si el lector no tiene nada, hace la petición
                 {
                     var response = client.GetAsync(url).Result;
                     var res = response.Content.ReadAsStringAsync().Result;
@@ -34,8 +34,9 @@ namespace LOMB.Views.Lectores
                     {
                         ListViewItem item = new ListViewItem(val.nombre.ToString());
                         item.SubItems.Add(val.apellidos.ToString());
-                        item.SubItems.Add(val.correo.ToString());
+                        item.SubItems.Add(val.fecha_nacimiento.ToString());
                         item.SubItems.Add(val.fecha_alta.ToString());
+                        item.SubItems.Add(val.curso_departamento.ToString());
                         matListView.Items.Add(item);
                     }
                 }
@@ -45,8 +46,9 @@ namespace LOMB.Views.Lectores
                     {
                         ListViewItem item = new ListViewItem(val.nombre.ToString());
                         item.SubItems.Add(val.apellidos.ToString());
-                        item.SubItems.Add(val.correo.ToString());
+                        item.SubItems.Add(val.fecha_nacimiento.ToString());
                         item.SubItems.Add(val.fecha_alta.ToString());
+                        item.SubItems.Add(val.curso_departamento.ToString());
                         matListView.Items.Add(item);
                     }
                 }

@@ -65,6 +65,7 @@ namespace LOMB.Views.Lectores
             this.txtBoxCorreo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -304,7 +305,8 @@ namespace LOMB.Views.Lectores
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.matListView.Depth = 0;
             this.matListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.matListView.FullRowSelect = true;
@@ -333,7 +335,7 @@ namespace LOMB.Views.Lectores
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Correo";
+            this.columnHeader3.Text = "Fecha nacimiento";
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader3.Width = 200;
             // 
@@ -603,6 +605,10 @@ namespace LOMB.Views.Lectores
             this.txtBoxNombre.Size = new System.Drawing.Size(190, 32);
             this.txtBoxNombre.TabIndex = 6;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Curso/Departamento";
+            // 
             // ListadoLectores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -673,5 +679,6 @@ namespace LOMB.Views.Lectores
         private Guna.UI2.WinForms.Guna2TextBox txtBoxApellidos;
         private System.Windows.Forms.Label lbApellidos;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

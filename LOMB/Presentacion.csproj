@@ -63,6 +63,7 @@
     <Compile Include="Entities\Categoria.cs" />
     <Compile Include="Entities\Editorial.cs" />
     <Compile Include="Entities\Idioma.cs" />
+    <Compile Include="Entities\Lector.cs" />
     <Compile Include="Entities\Libro.cs" />
     <Compile Include="Views\Lectores\ListadoLectores.cs">
       <SubType>Form</SubType>

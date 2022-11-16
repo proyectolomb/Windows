@@ -10,8 +10,8 @@ namespace LOMB.Entities
     {
         public string nombre { get; set; }
         public string apellidos { get; set; }
-        public string correo { get; set; }
+        public string fecha_nacimiento { get; set; }
         public string fecha_alta { get; set; }
-
+        public string curso_departamento { get; set; }
     }
 }
