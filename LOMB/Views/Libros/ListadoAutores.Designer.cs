@@ -186,7 +186,7 @@ namespace LOMB.Views.Libros
             this.guna2Panel1.Controls.Add(this.txtBoxApellidos);
             this.guna2Panel1.Controls.Add(this.txtBoxNombre);
             this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.guna2Panel1.Location = new System.Drawing.Point(60, 145);
+            this.guna2Panel1.Location = new System.Drawing.Point(59, 145);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(666, 113);
             this.guna2Panel1.TabIndex = 31;

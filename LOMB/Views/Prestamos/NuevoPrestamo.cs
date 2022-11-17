@@ -87,7 +87,7 @@ namespace LOMB.Views
                     cmbBoxLector.Items.Clear();
 
                     List<Lector> lectores = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Lector>>(res);
-                    Form1.instanciaLectores(lectores); // Le pasa la lista que acaba de obtener de la 
+                    Form1.instanciaLectores(lectores); // Le pasa la lista que acaba de obtener de la API
 
                     foreach (var val in lectores)
                     {
