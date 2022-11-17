@@ -37,7 +37,7 @@ namespace LOMB.Views
                         ListViewItem item = new ListViewItem(val.libro.nombre.ToString());
                         item.SubItems.Add(val.ejemplar.codigo.ToString());
 
-                        lector = val.lector.nombre.ToString() + val.lector.curso_departamento.ToString();
+                        lector = val.lector.nombre.ToString() + " - " + val.lector.curso_departamento.ToString();
                         item.SubItems.Add(lector);
 
                         item.SubItems.Add(val.fecha_prestamo.ToString());

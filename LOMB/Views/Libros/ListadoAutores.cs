@@ -32,7 +32,6 @@ namespace LOMB.Views.Libros
                     foreach (var val in autores)
                     {
                         ListViewItem item = new ListViewItem(val.nombre.ToString());
-                        item.SubItems.Add(val.nombre.ToString());
                         item.SubItems.Add(val.pais_origen.ToString());
                         item.SubItems.Add(val.categoria.nombre.ToString());
                         item.SubItems.Add(val.editorial.nombre.ToString());
@@ -44,7 +43,6 @@ namespace LOMB.Views.Libros
                     foreach (var val in Form1.autores) // Recorre variable global
                     {
                         ListViewItem item = new ListViewItem(val.nombre.ToString());
-                        item.SubItems.Add(val.nombre.ToString());
                         item.SubItems.Add(val.pais_origen.ToString());
                         item.SubItems.Add(val.categoria.nombre.ToString());
                         item.SubItems.Add(val.editorial.nombre.ToString());

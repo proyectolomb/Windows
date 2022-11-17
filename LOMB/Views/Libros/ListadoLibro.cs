@@ -18,7 +18,7 @@ namespace LOMB.Views
             skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             skinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green900, Primary.Green900, Accent.LightBlue200, TextShade.WHITE)*/
         }
-        void getLibro()
+        public void getLibro()
         {
             using (var client = new HttpClient())
             {
