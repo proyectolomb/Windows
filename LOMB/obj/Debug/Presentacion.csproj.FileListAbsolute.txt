@@ -25,3 +25,4 @@ G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.Lectores.NuevoLector.resou
 G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.Lectores.ListadoLectores.resources
 G:\DUAL\2\DI\Proyectos\LOMB\LOMB\bin\Debug\Newtonsoft.Json.dll
 G:\DUAL\2\DI\Proyectos\LOMB\LOMB\bin\Debug\Newtonsoft.Json.xml
+G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Views.Login.resources

@@ -93,6 +93,7 @@ namespace LOMB.Views
             this.btnDevolver.Size = new System.Drawing.Size(129, 37);
             this.btnDevolver.TabIndex = 17;
             this.btnDevolver.Text = "Devolver";
+            this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
             // 
             // Devolucion
             // 

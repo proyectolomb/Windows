@@ -52,6 +52,11 @@ namespace LOMB.Views.Libros
             }
         }
 
+        void getAutoresCategorias()
+        {
+
+        }
+
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtBoxNombre.Text = string.Empty;
@@ -62,6 +67,12 @@ namespace LOMB.Views.Libros
         private void ListadoAutores_Load(object sender, EventArgs e)
         {
             getAutores();
+
+            // Carga las categorías
+            foreach (var autor in Form1.autores)
+            {
+                cmbBoxCategoria.Items.Add(autor.categoria);
+            }
         }
 
         private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)

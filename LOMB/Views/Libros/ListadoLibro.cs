@@ -92,6 +92,14 @@ namespace LOMB.Views
             }
         }
 
+        void fillCategorias()
+        {
+            foreach (var libro in Form1.libros)
+            {
+                cmbBoxCategoria.Items.Add(libro.categorias);
+            }
+        }
+
         private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -100,6 +108,7 @@ namespace LOMB.Views
         private void ListadoLibro_Load(object sender, EventArgs e)
         {
             getLibro();
+            fillCategorias();
         }
     }
 }

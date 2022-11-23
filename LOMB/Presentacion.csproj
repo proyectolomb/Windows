@@ -85,6 +85,12 @@
     <Compile Include="Views\Libros\ListadoAutores.Designer.cs">
       <DependentUpon>ListadoAutores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Prestamos\Devolucion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     <EmbeddedResource Include="Views\Libros\ListadoAutores.resx">
       <DependentUpon>ListadoAutores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Prestamos\Devolucion.resx">
       <DependentUpon>Devolucion.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +209,7 @@
     <Content Include="Resources\devolver.png" />
     <Content Include="Resources\editar.png" />
     <Content Include="Resources\ies-comercio %281%29.ico" />
+    <Content Include="Resources\ies-comercio-resized.png" />
     <Content Include="Resources\lapiz.png" />
     <Content Include="Resources\libro.png" />
     <Content Include="Resources\logout.png" />
