@@ -58,7 +58,9 @@ namespace LOMB.Views
                         item.SubItems.Add(categorias);
                         item.SubItems.Add(val.editorial.nombre.ToString());
                         item.SubItems.Add(val.fecha_publicacion.ToString());
-                        //item.SubItems.Add(val.ejemplares.ToString());
+                        // Ejemplares de un libro
+                        getEjemplaresDeUnLibro(val.isbn, item);
+
                         matListview.Items.Add(item);
                     }
                 } else // En caso contrario, carga lo que ya hay (ya se había cargado previamente)
@@ -85,10 +87,36 @@ namespace LOMB.Views
                         item.SubItems.Add(categorias);
                         item.SubItems.Add(val.editorial.nombre.ToString());
                         item.SubItems.Add(val.fecha_publicacion.ToString());
-                        //item.SubItems.Add(val.ejemplares.ToString());
+                        // Ejemplares de un libro
+                        getEjemplaresDeUnLibro(val.isbn, item);
+
                         matListview.Items.Add(item);
                     }
                 }
+            }
+        }
+
+        void getEjemplaresDeUnLibro(string isbn, ListViewItem item)
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Clear();
+
+                string url = $"http://10.2.2.15:5000/api/v1/ejemplar/byisbn/{isbn}"; // Y se lo pasa al endpoint para consultar los ejemplares
+
+                string ejemplares = "";
+
+                var response = client.GetAsync(url).Result;
+                var res = response.Content.ReadAsStringAsync().Result;
+
+                List<Ejemplar> ejemplaresLista = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Ejemplar>>(res);
+
+                foreach (var ejemplar in ejemplaresLista)
+                {
+                    ejemplares += ejemplar.codigo.ToString() + " ";
+                }
+
+                item.SubItems.Add(ejemplares);
             }
         }
 
