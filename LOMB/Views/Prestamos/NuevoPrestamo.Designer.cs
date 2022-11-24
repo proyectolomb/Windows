@@ -107,7 +107,7 @@ namespace LOMB.Views
             this.cmbBoxLector.ItemHeight = 30;
             this.cmbBoxLector.Location = new System.Drawing.Point(264, 323);
             this.cmbBoxLector.Name = "cmbBoxLector";
-            this.cmbBoxLector.Size = new System.Drawing.Size(243, 36);
+            this.cmbBoxLector.Size = new System.Drawing.Size(313, 36);
             this.cmbBoxLector.TabIndex = 20;
             this.cmbBoxLector.SelectedIndexChanged += new System.EventHandler(this.cmbBoxLector_SelectedIndexChanged);
             // 
@@ -195,8 +195,9 @@ namespace LOMB.Views
             this.cmbBoxLibro.ItemHeight = 30;
             this.cmbBoxLibro.Location = new System.Drawing.Point(264, 230);
             this.cmbBoxLibro.Name = "cmbBoxLibro";
-            this.cmbBoxLibro.Size = new System.Drawing.Size(243, 36);
+            this.cmbBoxLibro.Size = new System.Drawing.Size(313, 36);
             this.cmbBoxLibro.TabIndex = 24;
+            this.cmbBoxLibro.SelectedIndexChanged += new System.EventHandler(this.cmbBoxLibro_SelectedIndexChanged);
             // 
             // NuevoPrestamo
             // 

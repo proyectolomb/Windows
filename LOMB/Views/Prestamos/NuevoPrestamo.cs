@@ -60,14 +60,14 @@ namespace LOMB.Views
 
                     foreach (var val in libros)
                     {
-                        cmbBoxLibro.Items.Add(val.isbn.ToString().Substring(0, 9) + " - " + val.nombre.ToString());
+                        cmbBoxLibro.Items.Add(val.isbn.ToString() + " ~ " + val.nombre.ToString());
                     }
                 }
                 else // En caso contrario, carga lo que ya hay (ya se había cargado previamente)
                 {
                     foreach (var val in Form1.libros) // Recorre variable global
                     {
-                        cmbBoxLibro.Items.Add(val.isbn.ToString().Substring(0, 9) + " - " + val.nombre.ToString());
+                        cmbBoxLibro.Items.Add(val.isbn.ToString() + " ~ " + val.nombre.ToString());
                     }
                 }
             }
@@ -102,6 +102,38 @@ namespace LOMB.Views
                     }
                 }
             }
+        }
+
+        void getEjemplaresDeUnLibro()
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Clear();
+
+                string selectedLibro = "";
+                
+                selectedLibro = cmbBoxLibro.Text.Split('~').GetValue(0).ToString().Trim(); // Coge el ISBN
+
+                string url = $"http://10.2.2.15:5000/api/v1/ejemplar/byisbn/{selectedLibro}"; // Y se lo pasa al endpoint para consultar los ejemplares
+
+                var response = client.GetAsync(url).Result;
+                var res = response.Content.ReadAsStringAsync().Result;
+
+                cmbBoxEjemplar.Items.Clear();
+
+                List<Ejemplar> ejemplares = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Ejemplar>>(res);
+
+                foreach (var ejemplar in ejemplares)
+                {
+                    cmbBoxEjemplar.Items.Add(ejemplar.codigo +"\t" + ejemplar.balda);
+                }
+
+            }
+        }
+        // Cuando elige un elemento del comboBox
+        private void cmbBoxLibro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            getEjemplaresDeUnLibro();
         }
     }
 }
