@@ -54,6 +54,8 @@ namespace LOMB.Views
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
             this.btnAplicar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbNombre = new System.Windows.Forms.Label();
+            this.txtBoxNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbBoxCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbCategoria = new System.Windows.Forms.Label();
             this.lbAutor = new System.Windows.Forms.Label();
@@ -61,8 +63,6 @@ namespace LOMB.Views
             this.txtBoxAutor = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxIsbn = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbTitleLibros = new System.Windows.Forms.Label();
-            this.lbNombre = new System.Windows.Forms.Label();
-            this.txtBoxNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -429,6 +429,38 @@ namespace LOMB.Views
             this.guna2Panel1.Size = new System.Drawing.Size(666, 113);
             this.guna2Panel1.TabIndex = 79;
             // 
+            // lbNombre
+            // 
+            this.lbNombre.AutoSize = true;
+            this.lbNombre.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lbNombre.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.lbNombre.Location = new System.Drawing.Point(17, 65);
+            this.lbNombre.Name = "lbNombre";
+            this.lbNombre.Size = new System.Drawing.Size(89, 28);
+            this.lbNombre.TabIndex = 33;
+            this.lbNombre.Text = "Nombre";
+            // 
+            // txtBoxNombre
+            // 
+            this.txtBoxNombre.BorderRadius = 5;
+            this.txtBoxNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxNombre.DefaultText = "";
+            this.txtBoxNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBoxNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBoxNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBoxNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxNombre.Location = new System.Drawing.Point(112, 65);
+            this.txtBoxNombre.Name = "txtBoxNombre";
+            this.txtBoxNombre.PasswordChar = '\0';
+            this.txtBoxNombre.PlaceholderText = "";
+            this.txtBoxNombre.SelectedText = "";
+            this.txtBoxNombre.Size = new System.Drawing.Size(190, 32);
+            this.txtBoxNombre.TabIndex = 32;
+            // 
             // cmbBoxCategoria
             // 
             this.cmbBoxCategoria.BackColor = System.Drawing.Color.Transparent;
@@ -441,11 +473,6 @@ namespace LOMB.Views
             this.cmbBoxCategoria.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbBoxCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbBoxCategoria.ItemHeight = 30;
-            this.cmbBoxCategoria.Items.AddRange(new object[] {
-            "Novela",
-            "Ciencia Ficción",
-            "Aventura",
-            "Humor"});
             this.cmbBoxCategoria.Location = new System.Drawing.Point(446, 65);
             this.cmbBoxCategoria.Name = "cmbBoxCategoria";
             this.cmbBoxCategoria.Size = new System.Drawing.Size(190, 36);
@@ -537,38 +564,6 @@ namespace LOMB.Views
             this.lbTitleLibros.Size = new System.Drawing.Size(137, 54);
             this.lbTitleLibros.TabIndex = 81;
             this.lbTitleLibros.Text = "Libros";
-            // 
-            // lbNombre
-            // 
-            this.lbNombre.AutoSize = true;
-            this.lbNombre.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lbNombre.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
-            this.lbNombre.Location = new System.Drawing.Point(17, 65);
-            this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(89, 28);
-            this.lbNombre.TabIndex = 33;
-            this.lbNombre.Text = "Nombre";
-            // 
-            // txtBoxNombre
-            // 
-            this.txtBoxNombre.BorderRadius = 5;
-            this.txtBoxNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxNombre.DefaultText = "";
-            this.txtBoxNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBoxNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBoxNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBoxNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxNombre.Location = new System.Drawing.Point(112, 65);
-            this.txtBoxNombre.Name = "txtBoxNombre";
-            this.txtBoxNombre.PasswordChar = '\0';
-            this.txtBoxNombre.PlaceholderText = "";
-            this.txtBoxNombre.SelectedText = "";
-            this.txtBoxNombre.Size = new System.Drawing.Size(190, 32);
-            this.txtBoxNombre.TabIndex = 32;
             // 
             // ListadoLibro
             // 

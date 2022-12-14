@@ -19,6 +19,7 @@ namespace LOMB.Views.Libros
             {
                 string url = "http://10.2.2.15:5000/api/v1/autor";
                 client.DefaultRequestHeaders.Clear();
+                string categorias = "";
 
                 if (Form1.autores == null) // Si el libro no tiene nada, hace la petición
                 {
@@ -33,8 +34,15 @@ namespace LOMB.Views.Libros
                     {
                         ListViewItem item = new ListViewItem(val.nombre.ToString());
                         item.SubItems.Add(val.pais_origen.ToString());
-                        item.SubItems.Add(val.categoria.nombre.ToString());
-                        item.SubItems.Add(val.editorial.nombre.ToString());
+                        //  Categorías
+                        categorias = "";
+                        foreach (var categoria in val.categorias)
+                        {
+                            categorias += categoria.nombre + " "; // Y lo añade a los autores que ya hay (si es que tiene)
+                        }
+                        item.SubItems.Add(categorias);
+
+                        item.SubItems.Add("Alfarra");
                         matListView.Items.Add(item);
                     }
                 }
@@ -44,8 +52,15 @@ namespace LOMB.Views.Libros
                     {
                         ListViewItem item = new ListViewItem(val.nombre.ToString());
                         item.SubItems.Add(val.pais_origen.ToString());
-                        item.SubItems.Add(val.categoria.nombre.ToString());
-                        item.SubItems.Add(val.editorial.nombre.ToString());
+                        //  Categorías
+                        categorias = "";
+                        foreach (var categoria in val.categorias)
+                        {
+                            categorias += categoria.nombre + " "; // Y lo añade a los autores que ya hay (si es que tiene)
+                        }
+                        item.SubItems.Add(categorias);
+
+                        item.SubItems.Add("Alfarra");
                         matListView.Items.Add(item);
                     }
                 }
@@ -71,7 +86,7 @@ namespace LOMB.Views.Libros
             // Carga las categorías
             foreach (var autor in Form1.autores)
             {
-                cmbBoxCategoria.Items.Add(autor.categoria);
+                cmbBoxCategoria.Items.Add(autor.categorias);
             }
         }
 

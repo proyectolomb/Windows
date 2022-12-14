@@ -22,43 +22,23 @@ namespace LOMB.Views
                 client.DefaultRequestHeaders.Clear();
 
                 string lector = "";
+                var response = client.GetAsync(url).Result;
+                var res = response.Content.ReadAsStringAsync().Result;
+                matListView.Items.Clear();
 
-                if (Form1.prestamos == null) // Si el libro no tiene nada, hace la petición
+                List<Prestamo> prestamos = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Prestamo>>(res);
+
+                foreach (var val in prestamos)
                 {
-                    var response = client.GetAsync(url).Result;
-                    var res = response.Content.ReadAsStringAsync().Result;
-                    matListView.Items.Clear();
+                    ListViewItem item = new ListViewItem(val.libro.nombre.ToString());
+                    item.SubItems.Add(val.ejemplar.codigo.ToString());
 
-                    List<Prestamo> prestamos = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Prestamo>>(res);
-                    Form1.instanciaPrestamos(prestamos); // Le pasa la lista que acaba de obtener de la 
+                    lector = val.lector.nombre.ToString() + " - " + val.lector.curso_departamento.ToString();
+                    item.SubItems.Add(lector);
 
-                    foreach (var val in prestamos)
-                    {
-                        ListViewItem item = new ListViewItem(val.libro.nombre.ToString());
-                        item.SubItems.Add(val.ejemplar.codigo.ToString());
-
-                        lector = val.lector.nombre.ToString() + " - " + val.lector.curso_departamento.ToString();
-                        item.SubItems.Add(lector);
-
-                        item.SubItems.Add(val.fecha_prestamo.ToString());
-                        item.SubItems.Add(val.fecha_devolucion.ToString());
-                        matListView.Items.Add(item);
-                    }
-                }
-                else // En caso contrario, carga lo que ya hay (ya se había cargado previamente)
-                {
-                    foreach (var val in Form1.prestamos) // Recorre variable global
-                    {
-                        ListViewItem item = new ListViewItem(val.libro.nombre.ToString());
-                        item.SubItems.Add(val.ejemplar.codigo.ToString());
-
-                        lector = val.lector.nombre.ToString() + " - " + val.lector.curso_departamento.ToString();
-                        item.SubItems.Add(lector);
-
-                        item.SubItems.Add(val.fecha_prestamo.ToString());
-                        item.SubItems.Add(val.fecha_devolucion.ToString());
-                        matListView.Items.Add(item);
-                    }
+                    item.SubItems.Add(val.fecha_prestamo.ToString());
+                    item.SubItems.Add(val.fecha_devolucion.ToString());
+                    matListView.Items.Add(item);
                 }
             }
         }

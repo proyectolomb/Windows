@@ -34,7 +34,7 @@ namespace LOMB.Views
                     matListview.Items.Clear();
 
                     List<Libro> libros = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Libro>>(res);
-                    Form1.instanciaLibros(libros); // Le pasa la lista que acaba de obtener de la 
+                    Form1.instanciaLibros(libros); // Le pasa la lista que acaba de obtener de la API
 
                     foreach (var val in libros)
                     {
@@ -124,7 +124,10 @@ namespace LOMB.Views
         {
             foreach (var libro in Form1.libros)
             {
-                cmbBoxCategoria.Items.Add(libro.categorias);
+                foreach (var categoria in libro.categorias)
+                {
+                    cmbBoxCategoria.Items.Add(categoria.nombre);
+                }   
             }
         }
 
