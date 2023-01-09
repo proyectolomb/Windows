@@ -47,6 +47,7 @@ namespace LOMB
             autores = autoresPasado;
         }
 
+        
         private void customizeDesign()
         {
             panelPrestamosSubmenu.Visible = false;
@@ -54,6 +55,8 @@ namespace LOMB
             panelLectoresSubmenu.Visible = false;
         }
 
+
+        /// <summary>Colapsa el submenú</summary>
         private void hideSubMenu()
         {
             if(panelPrestamosSubmenu.Visible)
@@ -65,6 +68,9 @@ namespace LOMB
 
         }
 
+
+        /// <summary>Expande el submenú</summary>
+        /// <param name="subMenu">Panel cuyo submenú se quiere mostrar.</param>
         private void showSubMenu(Panel subMenu)
         {
             if(subMenu.Visible == false) 
@@ -162,6 +168,7 @@ namespace LOMB
         #endregion
 
         private Form activeForm = null;
+        
         private void openChildForm(Form childForm)
         {
             if (activeForm != null)

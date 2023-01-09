@@ -17,6 +17,9 @@ namespace LOMB.Views
             InitializeComponent();
         }
 
+        /// <summary>Limpia todos los campos de filtrado de la vista.</summary>
+        /// <param name="sender">Elemento que genera el evento.</param>
+        /// <param name="e">Agumentos del evento</param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtBoxLibro.Text = string.Empty;

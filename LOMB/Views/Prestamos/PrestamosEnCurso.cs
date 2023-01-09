@@ -14,6 +14,7 @@ namespace LOMB.Views
             InitializeComponent();
         }
 
+        /// <summary>Recupera todos los préstamos de la base de datos.</summary>
         void getPrestamos()
         {
             using (var client = new HttpClient())
@@ -43,6 +44,9 @@ namespace LOMB.Views
             }
         }
 
+        /// <summary>Limpia todos los campos de filtrado de la vista.</summary>
+        /// <param name="sender">Elemento que genera el evento.</param>
+        /// <param name="e">Agumentos del evento</param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtBoxLibro.Text = string.Empty;

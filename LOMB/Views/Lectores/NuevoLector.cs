@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace LOMB.Views.Lectores
 {
+
+    /// <summary>Formulario para añadir nuevo lector.</summary>
     public partial class NuevoLector : Form
     {
         public NuevoLector()
@@ -21,7 +23,9 @@ namespace LOMB.Views.Lectores
         {
 
         }
-
+        /// <summary>Limpia todos los campos de filtrado de la vista.</summary>
+        /// <param name="sender">Elemento que genera el evento.</param>
+        /// <param name="e">Agumentos del evento</param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtBoxNombre.Text = string.Empty;

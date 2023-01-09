@@ -18,6 +18,9 @@ namespace LOMB.Views
             skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             skinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green900, Primary.Green900, Accent.LightBlue200, TextShade.WHITE)*/
         }
+        /// <summary>
+        ///   <para> Recupera los datos de los libros.</para>
+        /// </summary>
         public void getLibro()
         {
             using (var client = new HttpClient())
@@ -96,6 +99,9 @@ namespace LOMB.Views
             }
         }
 
+        /// <summary>Devuelve los ejemplares de un libro en cuestión.</summary>
+        /// <param name="isbn">ISBN del libro en cuestión</param>
+        /// <param name="item">Registro de la tabla</param>
         void getEjemplaresDeUnLibro(string isbn, ListViewItem item)
         {
             using (var client = new HttpClient())
@@ -120,6 +126,7 @@ namespace LOMB.Views
             }
         }
 
+        /// <summary>Rellena el combobox de categorías con todas las existentes.</summary>
         void fillCategorias()
         {
             foreach (var libro in Form1.libros)
@@ -136,6 +143,9 @@ namespace LOMB.Views
 
         }
 
+        /// <summary>Todas las instrucciones dentro de este método s ejecutarán al carga el formulario.</summary>
+        /// <param name="sender">Objeto que envía el evento</param>
+        /// <param name="e">Argumentos del evento.</param>
         private void ListadoLibro_Load(object sender, EventArgs e)
         {
             getLibro();

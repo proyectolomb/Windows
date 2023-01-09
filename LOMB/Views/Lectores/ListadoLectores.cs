@@ -7,13 +7,16 @@ using System.Windows.Forms;
 
 namespace LOMB.Views.Lectores
 {
+    /// <summary>Clase correspondiente a la ventana para listar los lectores de la base de datos.</summary>
     public partial class ListadoLectores : Form
     {
+        /// <summary>Constructor para el listado de los lectores. Inicializa los componentes.</summary>
         public ListadoLectores()
         {
             InitializeComponent();
         }
 
+        /// <summary>Recupera todos los lectores de la base de datos.</summary>
         void getLectores()
         {
             using (var client = new HttpClient())
@@ -70,6 +73,9 @@ namespace LOMB.Views.Lectores
 
         }
 
+        /// <summary>Limpia todos los campos de filtrado de la vista.</summary>
+        /// <param name="sender">Elemento que genera el evento.</param>
+        /// <param name="e">Argumentos del evento.</param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtBoxNombre.Text = "";
@@ -83,6 +89,9 @@ namespace LOMB.Views.Lectores
 
         }
 
+        /// <summary>Llama al método getLectores() y carga los datos en la tabla.</summary>
+        /// <param name="sender">Elemento que genera el evento.</param>
+        /// <param name="e">Argumentos del evento.</param>
         private void ListadoLectores_Load(object sender, EventArgs e)
         {
             getLectores();

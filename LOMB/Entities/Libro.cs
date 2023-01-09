@@ -16,6 +16,8 @@ namespace LOMB.Entities
         public Editorial editorial { get; set; }
         public List<Categoria> categorias { get; set; }
 
+        /// <summary>Método toString de la entidad Libro.</summary>
+        /// <returns>Cadena con los datos de la entidad.</returns>
         public override string ToString()
         {
             return String.Format("ISBN: {0}\nNombre: {1}\nFecha de publicación: {2}\nIdioma: {3}\nEditorial: {4}", isbn, nombre, fecha_publicacion, idioma, editorial);
