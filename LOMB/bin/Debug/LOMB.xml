@@ -4,6 +4,66 @@
         <name>LOMB</name>
     </assembly>
     <members>
+        <member name="M:LOMB.Entities.Autor.ToString">
+            <summary>Método toString de la entidad Autor.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="M:LOMB.Entities.Categoria.ToString">
+            <summary>Método toString de la entidad Categoría.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="M:LOMB.Entities.Editorial.ToString">
+            <summary>Método toString de la entidad Editorial.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="M:LOMB.Entities.Idioma.ToString">
+            <summary>Método toString de la entidad Idioma.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="M:LOMB.Entities.Libro.ToString">
+            <summary>Método toString de la entidad Libro.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="F:LOMB.Informes.LibrosForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Informes.LibrosForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Informes.LibrosForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LOMB.Informes.PrestamoMesForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Informes.PrestamoMesForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Informes.PrestamoMesForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LOMB.Views.Lectores.ListadoLectores">
+            <summary>Clase correspondiente a la ventana para listar los lectores de la base de datos.</summary>
+        </member>
+        <member name="M:LOMB.Views.Lectores.ListadoLectores.#ctor">
+            <summary>Constructor para el listado de los lectores. Inicializa los componentes.</summary>
+        </member>
         <member name="M:LOMB.Views.Lectores.ListadoLectores.getLectores">
             <summary>Recupera todos los lectores de la base de datos.</summary>
         </member>
@@ -34,6 +94,9 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:LOMB.Views.Lectores.NuevoLector">
+            <summary>Formulario para añadir nuevo lector.</summary>
+        </member>
         <member name="M:LOMB.Views.Lectores.NuevoLector.btnLimpiar_Click(System.Object,System.EventArgs)">
             <summary>Limpia todos los campos de filtrado de la vista.</summary>
             <param name="sender">Elemento que genera el evento.</param>
@@ -56,6 +119,12 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:LOMB.Views.Libros.ListadoAutores">
+            <summary>Formulario para el listado de autores.</summary>
+        </member>
+        <member name="M:LOMB.Views.Libros.ListadoAutores.#ctor">
+            <summary>Constructor para inicializar el formulario.</summary>
+        </member>
         <member name="M:LOMB.Views.Libros.ListadoAutores.getAutores">
             <summary>Recupera todos los autores de la base de datos.</summary>
         </member>
@@ -63,6 +132,11 @@
             <summary>Limpia todos los campos de filtrado de la vista.</summary>
             <param name="sender">Elemento que genera el evento.</param>
             <param name="e">Agumentos del evento</param>
+        </member>
+        <member name="M:LOMB.Views.Libros.ListadoAutores.ListadoAutores_Load(System.Object,System.EventArgs)">
+            <summary>Todas las instrucciones dentro de este método s ejecutarán al carga el formulario.</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">Argumentos del evento.</param>
         </member>
         <member name="F:LOMB.Views.Libros.ListadoAutores.components">
             <summary>
@@ -146,6 +220,40 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:LOMB.Views.Home">
+            <summary>Ventana principal. Contiene el menú y  un formulario hijo en el que se abren el resto de ventanas.</summary>
+        </member>
+        <member name="M:LOMB.Views.Home.#ctor">
+            <summary>constructor para inicializar la home.</summary>
+        </member>
+        <member name="M:LOMB.Views.Home.openChildForm(System.Windows.Forms.Form)">
+            <summary>Abre el formulario pasado por parámetro en el formulario hijo.</summary>
+            <param name="childForm">Formulario a abrir.</param>
+        </member>
+        <member name="M:LOMB.Views.Home.btnHomeNuevoPrestamo_Click(System.Object,System.EventArgs)">
+            <summary>Método que se ejecuta cuando se hace clic en el botón de "Nuevo préstamo"</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">
+              <para>
+            Argumentos del evento</para>
+            </param>
+        </member>
+        <member name="M:LOMB.Views.Home.btnHomeDevolucion_Click(System.Object,System.EventArgs)">
+            <summary>Método que se ejecuta cuando se hace clic en el botón de "Devolución"</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">
+              <para>
+            Argumentos del evento</para>
+            </param>
+        </member>
+        <member name="M:LOMB.Views.Home.btnHomePrestamosEnCurso_Click(System.Object,System.EventArgs)">
+            <summary>Método que se ejecuta cuando se hace clic en el botón de "Préstamos en curso"</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">
+              <para>
+            Argumentos del evento</para>
+            </param>
+        </member>
         <member name="F:LOMB.Views.Home.components">
             <summary>
             Required designer variable.
@@ -165,8 +273,7 @@
         </member>
         <member name="M:LOMB.Views.ListadoLibro.getLibro">
             <summary>
-              <para>
-            Recupera los datos de los libros.</para>
+              <para> Recupera los datos de los libros.</para>
             </summary>
         </member>
         <member name="M:LOMB.Views.ListadoLibro.getEjemplaresDeUnLibro(System.String,System.Windows.Forms.ListViewItem)">
@@ -176,6 +283,11 @@
         </member>
         <member name="M:LOMB.Views.ListadoLibro.fillCategorias">
             <summary>Rellena el combobox de categorías con todas las existentes.</summary>
+        </member>
+        <member name="M:LOMB.Views.ListadoLibro.ListadoLibro_Load(System.Object,System.EventArgs)">
+            <summary>Todas las instrucciones dentro de este método s ejecutarán al carga el formulario.</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">Argumentos del evento.</param>
         </member>
         <member name="F:LOMB.Views.ListadoLibro.components">
             <summary>
@@ -279,6 +391,13 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="M:LOMB.Form1.hideSubMenu">
+            <summary>Colapsa el submenú</summary>
+        </member>
+        <member name="M:LOMB.Form1.showSubMenu(System.Windows.Forms.Panel)">
+            <summary>Expande el submenú</summary>
+            <param name="subMenu">Panel cuyo submenú se quiere mostrar.</param>
         </member>
         <member name="F:LOMB.Form1.components">
             <summary>
