@@ -14,6 +14,8 @@ namespace LOMB.Views
             InitializeComponent();
         }
 
+        /// <summary>Elimina el préstamo cuyo código de ejemplar coincide con el parámetro.</summary>
+        /// <param name="ejemplar">Código el ejemplar cuyo péstamo se quiere eliminar.</param>
         public async void deletePrestamo(string ejemplar)
         {
             using (var client = new HttpClient())
@@ -34,6 +36,9 @@ namespace LOMB.Views
             }
         }
 
+        /// <summary>Método que se ejecuta cuando se pulsa el botón de devolver préstamo. Llama al método deletePrestamo().</summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnDevolver_Click(object sender, EventArgs e)
         {
             if(txtBoxLector.Text != "" || txtBoxLector.Text!=" ")

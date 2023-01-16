@@ -14,6 +14,9 @@ namespace LOMB.Entities
         public List<Categoria> categorias { get; set; }
         public Editorial editorial { get; set; }
 
+
+        /// <summary>Método toString de la entidad Autor.</summary>
+        /// <returns>Cadena con los datos de la entidad.</returns>
         public override string ToString()
         {
             return String.Format("ID: {0} Nombre: {1}", id, nombre);

@@ -24,6 +24,9 @@ namespace LOMB.Views
 
         }
 
+        /// <summary>Limpia todos los campos de filtrado de la vista.</summary>
+        /// <param name="sender">Elemento que genera el evento.</param>
+        /// <param name="e">Agumentos del evento</param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             cmbBoxLibro.Items.Clear();
@@ -41,6 +44,10 @@ namespace LOMB.Views
             getLectores();
         }
 
+        /// <summary>
+        ///   <para>
+        /// Recupera los datos de todos los libros de la base de datos.</para>
+        /// </summary>
         public void getLibros()
         {
             using (var client = new HttpClient())
@@ -73,6 +80,7 @@ namespace LOMB.Views
             }
         }
 
+        /// <summary>Recupera todos los lectores de la base de datos.</summary>
         void getLectores()
         {
             using (var client = new HttpClient())
@@ -104,6 +112,7 @@ namespace LOMB.Views
             }
         }
 
+        /// <summary>Recupera todos los ejemplares de un libro.</summary>
         void getEjemplaresDeUnLibro()
         {
             using (var client = new HttpClient())
@@ -131,6 +140,9 @@ namespace LOMB.Views
             }
         }
         // Cuando elige un elemento del comboBox
+        /// <summary>Método que se ejecuta cada vez que se elige un valor del combobox de libros. En este caso, recupera los ejemplares del libro en cuestión.</summary>
+        /// <param name="sender">Elemento que genera el evento.</param>
+        /// <param name="e">Argumentos del evento</param>
         private void cmbBoxLibro_SelectedIndexChanged(object sender, EventArgs e)
         {
             getEjemplaresDeUnLibro();

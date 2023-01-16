@@ -7,12 +7,17 @@ using System.Windows.Forms;
 
 namespace LOMB.Views.Libros
 {
+
+    /// <summary>Formulario para el listado de autores.</summary>
     public partial class ListadoAutores : Form
     {
+
+        /// <summary>Constructor para inicializar el formulario.</summary>
         public ListadoAutores()
         {
             InitializeComponent();
         }
+        /// <summary>Recupera todos los autores de la base de datos.</summary>
         void getAutores()
         {
             using (var client = new HttpClient())
@@ -71,7 +76,9 @@ namespace LOMB.Views.Libros
         {
 
         }
-
+        /// <summary>Limpia todos los campos de filtrado de la vista.</summary>
+        /// <param name="sender">Elemento que genera el evento.</param>
+        /// <param name="e">Agumentos del evento</param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtBoxNombre.Text = string.Empty;
@@ -79,6 +86,10 @@ namespace LOMB.Views.Libros
             cmbBoxCategoria.Items.Clear();
         }
 
+
+        /// <summary>Todas las instrucciones dentro de este método s ejecutarán al carga el formulario.</summary>
+        /// <param name="sender">Objeto que envía el evento</param>
+        /// <param name="e">Argumentos del evento.</param>
         private void ListadoAutores_Load(object sender, EventArgs e)
         {
             getAutores();
