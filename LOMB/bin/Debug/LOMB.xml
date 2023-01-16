@@ -41,18 +41,35 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="F:LOMB.Informes.PrestamoMesForm.components">
+        <member name="F:LOMB.Informes.PrestamoAlumnoForm.components">
             <summary>
             Required designer variable.
             </summary>
         </member>
-        <member name="M:LOMB.Informes.PrestamoMesForm.Dispose(System.Boolean)">
+        <member name="M:LOMB.Informes.PrestamoAlumnoForm.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:LOMB.Informes.PrestamoMesForm.InitializeComponent">
+        <member name="M:LOMB.Informes.PrestamoAlumnoForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LOMB.Informes.PrestamoMesAgrupadoForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Informes.PrestamoMesAgrupadoForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Informes.PrestamoMesAgrupadoForm.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.

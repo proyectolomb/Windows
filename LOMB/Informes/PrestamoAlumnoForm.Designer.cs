@@ -1,7 +1,7 @@
 ﻿
 namespace LOMB.Informes
 {
-    partial class PrestamoMesForm
+    partial class PrestamoAlumnoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,8 @@ namespace LOMB.Informes
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.PrestamoMes1 = new LOMB.Informes.PrestamoMes();
+            this.PrestamoAlumno1 = new LOMB.Informes.PrestamoAlumno();
+            this.PrestamoAlumno2 = new LOMB.Informes.PrestamoAlumno();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -41,19 +42,19 @@ namespace LOMB.Informes
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.PrestamoMes1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1149, 674);
+            this.crystalReportViewer1.ReportSource = this.PrestamoAlumno2;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1192, 775);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // PrestamoMesForm
+            // PrestamoAlumnoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 674);
+            this.ClientSize = new System.Drawing.Size(1192, 775);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "PrestamoMesForm";
+            this.Name = "PrestamoAlumnoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PrestamoMesForm";
+            this.Text = "PrestamoAlumnoForm";
             this.ResumeLayout(false);
 
         }
@@ -61,6 +62,7 @@ namespace LOMB.Informes
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private PrestamoMes PrestamoMes1;
+        private PrestamoAlumno PrestamoAlumno1;
+        private PrestamoAlumno PrestamoAlumno2;
     }
 }

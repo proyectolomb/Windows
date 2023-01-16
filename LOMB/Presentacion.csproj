@@ -86,17 +86,29 @@
     <Compile Include="Informes\LibrosForm.Designer.cs">
       <DependentUpon>LibrosForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Informes\PrestamoMes.cs">
+    <Compile Include="Informes\PrestamoAlumno.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PrestamoMes.rpt</DependentUpon>
+      <DependentUpon>PrestamoAlumno.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Informes\PrestamoMesForm.cs">
+    <Compile Include="Informes\PrestamoAlumnoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Informes\PrestamoMesForm.Designer.cs">
-      <DependentUpon>PrestamoMesForm.cs</DependentUpon>
+    <Compile Include="Informes\PrestamoAlumnoForm.Designer.cs">
+      <DependentUpon>PrestamoAlumnoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\PrestamoMesAgrupado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrestamoMesAgrupado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\PrestamoMesAgrupadoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\PrestamoMesAgrupadoForm.Designer.cs">
+      <DependentUpon>PrestamoMesAgrupadoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Lectores\ListadoLectores.cs">
       <SubType>Form</SubType>
@@ -179,12 +191,19 @@
     <EmbeddedResource Include="Informes\LibrosForm.resx">
       <DependentUpon>LibrosForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Informes\PrestamoMes.rpt">
+    <EmbeddedResource Include="Informes\PrestamoAlumno.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>PrestamoMes.cs</LastGenOutput>
+      <LastGenOutput>PrestamoAlumno.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Informes\PrestamoMesForm.resx">
-      <DependentUpon>PrestamoMesForm.cs</DependentUpon>
+    <EmbeddedResource Include="Informes\PrestamoAlumnoForm.resx">
+      <DependentUpon>PrestamoAlumnoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\PrestamoMesAgrupado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrestamoMesAgrupado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\PrestamoMesAgrupadoForm.resx">
+      <DependentUpon>PrestamoMesAgrupadoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

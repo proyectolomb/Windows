@@ -107,3 +107,5 @@ G:\CLASE\2\LOMB\Windows\Windows\LOMB\obj\Debug\LOMB.exe
 G:\CLASE\2\LOMB\Windows\Windows\LOMB\obj\Debug\LOMB.pdb
 >>>>>>> franDoc
 G:\DUAL\2\DI\Proyectos\LOMB\LOMB\bin\Debug\LOMB.xml
+G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Informes.PrestamoMesAgrupadoForm.resources
+G:\DUAL\2\DI\Proyectos\LOMB\LOMB\obj\Debug\LOMB.Informes.PrestamoAlumnoForm.resources

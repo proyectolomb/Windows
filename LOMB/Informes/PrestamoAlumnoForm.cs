@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LOMB.Informes
 {
-    public partial class PrestamoMesForm : Form
+    public partial class PrestamoAlumnoForm : Form
     {
-        public PrestamoMesForm()
+        public PrestamoAlumnoForm()
         {
             InitializeComponent();
         }
