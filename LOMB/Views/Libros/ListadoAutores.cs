@@ -105,5 +105,10 @@ namespace LOMB.Views.Libros
         {
 
         }
+
+        private void lbPersona_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

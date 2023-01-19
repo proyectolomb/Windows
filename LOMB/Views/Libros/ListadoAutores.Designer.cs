@@ -233,6 +233,7 @@ namespace LOMB.Views.Libros
             this.lbPersona.Size = new System.Drawing.Size(86, 28);
             this.lbPersona.TabIndex = 33;
             this.lbPersona.Text = "Persona";
+            this.lbPersona.Click += new System.EventHandler(this.lbPersona_Click);
             // 
             // radBtnPersona
             // 
