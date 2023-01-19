@@ -30,8 +30,8 @@ namespace LOMB.Informes
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.PrestamoAlumno1 = new LOMB.Informes.PrestamoAlumno();
             this.PrestamoAlumno2 = new LOMB.Informes.PrestamoAlumno();
+            this.PrestamoAlumno1 = new LOMB.Informes.PrestamoAlumno();
             this.SuspendLayout();
             // 
             // crystalReportViewer1

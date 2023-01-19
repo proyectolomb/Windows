@@ -42,14 +42,14 @@ namespace LOMB.Informes
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = this.CrystalReport11;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1248, 628);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1248, 778);
             this.crystalReportViewer1.TabIndex = 0;
             // 
             // LibrosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1248, 628);
+            this.ClientSize = new System.Drawing.Size(1248, 778);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "LibrosForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

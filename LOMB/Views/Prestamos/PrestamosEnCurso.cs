@@ -59,5 +59,17 @@ namespace LOMB.Views
         {
             getPrestamos();
         }
+
+        private void btnInformePrestamos_Click(object sender, EventArgs e)
+        {
+            Informes.PrestamoMesAgrupadoForm prestamosMes = new Informes.PrestamoMesAgrupadoForm();
+            prestamosMes.Show();
+        }
+
+        private void btnInformePrestamosAlumno_Click(object sender, EventArgs e)
+        {
+            Informes.PrestamoAlumnoForm prestamosAlumno = new Informes.PrestamoAlumnoForm();
+            prestamosAlumno.Show();
+        }
     }
 }
