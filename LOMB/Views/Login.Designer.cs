@@ -99,11 +99,12 @@ namespace LOMB.Views
             this.txtBoxContra.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxContra.Location = new System.Drawing.Point(707, 406);
             this.txtBoxContra.Name = "txtBoxContra";
-            this.txtBoxContra.PasswordChar = '\0';
+            this.txtBoxContra.PasswordChar = '●';
             this.txtBoxContra.PlaceholderText = "Nombre de usuario...";
             this.txtBoxContra.SelectedText = "";
             this.txtBoxContra.Size = new System.Drawing.Size(239, 32);
             this.txtBoxContra.TabIndex = 11;
+            this.txtBoxContra.UseSystemPasswordChar = true;
             // 
             // btnIniciarSesion
             // 
@@ -121,6 +122,7 @@ namespace LOMB.Views
             this.btnIniciarSesion.Size = new System.Drawing.Size(185, 38);
             this.btnIniciarSesion.TabIndex = 31;
             this.btnIniciarSesion.Text = "Iniciar sesión";
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // btnVerLibros
             // 

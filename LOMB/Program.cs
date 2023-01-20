@@ -17,7 +17,7 @@ namespace LOMB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Informes.PrestamoAlumnoForm());
+            Application.Run(new Views.Login());
         }
 
     }
