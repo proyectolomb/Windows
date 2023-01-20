@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LOMB.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,15 @@ namespace LOMB.ControlUsuario
 {
     public partial class Filtro : UserControl
     {
+        public List<Categoria> CmbBoxCategoriaDataSource
+        {
+            get { return null; }
+            set { cmbBoxCategoria.DataSource = value; }
+        }
+        public string CmbBoxCategoriaSelected
+        {
+            get { return cmbBoxCategoria.SelectedText.ToString(); }
+        }
         public Filtro()
         {
             InitializeComponent();

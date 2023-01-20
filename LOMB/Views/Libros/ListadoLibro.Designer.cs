@@ -373,6 +373,7 @@ namespace LOMB.Views
             this.filtro1.Name = "filtro1";
             this.filtro1.Size = new System.Drawing.Size(670, 160);
             this.filtro1.TabIndex = 82;
+            this.filtro1.Load += new System.EventHandler(this.filtro1_Load);
             // 
             // ListadoLibro
             // 

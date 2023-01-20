@@ -258,7 +258,7 @@ namespace LOMB.ControlUsuario
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label lbNombre;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxNombre;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbBoxCategoria;
+        public Guna.UI2.WinForms.Guna2ComboBox cmbBoxCategoria;
         private System.Windows.Forms.Label lbCategoria;
         private System.Windows.Forms.Label lbAutor;
         private System.Windows.Forms.Label lbIsbn;

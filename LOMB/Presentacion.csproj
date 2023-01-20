@@ -72,6 +72,12 @@
     <Compile Include="ControlUsuario\Filtro.Designer.cs">
       <DependentUpon>Filtro.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlUsuario\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuario\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Autor.cs" />
     <Compile Include="Entities\Categoria.cs" />
     <Compile Include="Entities\Editorial.cs" />
