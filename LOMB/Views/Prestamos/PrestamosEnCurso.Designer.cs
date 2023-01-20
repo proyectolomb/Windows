@@ -61,6 +61,8 @@ namespace LOMB.Views
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnInformePrestamosMes = new Guna.UI2.WinForms.Guna2Button();
+            this.btnInformePrestamosAlumno = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -545,12 +547,54 @@ namespace LOMB.Views
             this.guna2Button1.Size = new System.Drawing.Size(43, 45);
             this.guna2Button1.TabIndex = 17;
             // 
+            // btnInformePrestamosMes
+            // 
+            this.btnInformePrestamosMes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.btnInformePrestamosMes.BorderRadius = 20;
+            this.btnInformePrestamosMes.BorderThickness = 2;
+            this.btnInformePrestamosMes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInformePrestamosMes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformePrestamosMes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformePrestamosMes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInformePrestamosMes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInformePrestamosMes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
+            this.btnInformePrestamosMes.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnInformePrestamosMes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.btnInformePrestamosMes.Location = new System.Drawing.Point(784, 119);
+            this.btnInformePrestamosMes.Name = "btnInformePrestamosMes";
+            this.btnInformePrestamosMes.Size = new System.Drawing.Size(221, 58);
+            this.btnInformePrestamosMes.TabIndex = 83;
+            this.btnInformePrestamosMes.Text = "Informe de préstamos cada mes";
+            this.btnInformePrestamosMes.Click += new System.EventHandler(this.btnInformePrestamos_Click);
+            // 
+            // btnInformePrestamosAlumno
+            // 
+            this.btnInformePrestamosAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.btnInformePrestamosAlumno.BorderRadius = 20;
+            this.btnInformePrestamosAlumno.BorderThickness = 2;
+            this.btnInformePrestamosAlumno.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInformePrestamosAlumno.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformePrestamosAlumno.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformePrestamosAlumno.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInformePrestamosAlumno.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInformePrestamosAlumno.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
+            this.btnInformePrestamosAlumno.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnInformePrestamosAlumno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.btnInformePrestamosAlumno.Location = new System.Drawing.Point(784, 208);
+            this.btnInformePrestamosAlumno.Name = "btnInformePrestamosAlumno";
+            this.btnInformePrestamosAlumno.Size = new System.Drawing.Size(221, 58);
+            this.btnInformePrestamosAlumno.TabIndex = 84;
+            this.btnInformePrestamosAlumno.Text = "Informe de préstamos por alumno";
+            this.btnInformePrestamosAlumno.Click += new System.EventHandler(this.btnInformePrestamosAlumno_Click);
+            // 
             // PrestamosEnCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(222)))), ((int)(((byte)(181)))));
             this.ClientSize = new System.Drawing.Size(1173, 778);
+            this.Controls.Add(this.btnInformePrestamosAlumno);
+            this.Controls.Add(this.btnInformePrestamosMes);
             this.Controls.Add(this.guna2Button11);
             this.Controls.Add(this.guna2Button12);
             this.Controls.Add(this.guna2Button9);
@@ -612,5 +656,7 @@ namespace LOMB.Views
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Button guna2Button11;
         private Guna.UI2.WinForms.Guna2Button guna2Button12;
+        private Guna.UI2.WinForms.Guna2Button btnInformePrestamosMes;
+        private Guna.UI2.WinForms.Guna2Button btnInformePrestamosAlumno;
     }
 }

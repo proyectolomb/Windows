@@ -162,9 +162,10 @@ namespace LOMB.Views
             fillCategorias();
         }
 
-        private void filtro1_Load(object sender, EventArgs e)
+        private void btnInformeLibros_Click(object sender, EventArgs e)
         {
-
+            Informes.LibrosForm libros = new Informes.LibrosForm();
+            libros.Show();
         }
     }
 }

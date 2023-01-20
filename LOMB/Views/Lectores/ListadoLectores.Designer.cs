@@ -48,6 +48,7 @@ namespace LOMB.Views.Lectores
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbTitleLectores = new System.Windows.Forms.Label();
             this.lbFiltros = new System.Windows.Forms.Label();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
@@ -65,7 +66,6 @@ namespace LOMB.Views.Lectores
             this.txtBoxCorreo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -345,6 +345,10 @@ namespace LOMB.Views.Lectores
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader4.Width = 200;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Curso/Departamento";
+            // 
             // lbTitleLectores
             // 
             this.lbTitleLectores.AutoSize = true;
@@ -496,7 +500,6 @@ namespace LOMB.Views.Lectores
             this.lbAlumno.Size = new System.Drawing.Size(86, 28);
             this.lbAlumno.TabIndex = 33;
             this.lbAlumno.Text = "Alumno";
-            this.lbAlumno.Click += new System.EventHandler(this.lbAlumno_Click);
             // 
             // radBtnAlumno
             // 
@@ -604,10 +607,6 @@ namespace LOMB.Views.Lectores
             this.txtBoxNombre.SelectedText = "";
             this.txtBoxNombre.Size = new System.Drawing.Size(190, 32);
             this.txtBoxNombre.TabIndex = 6;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Curso/Departamento";
             // 
             // ListadoLectores
             // 
