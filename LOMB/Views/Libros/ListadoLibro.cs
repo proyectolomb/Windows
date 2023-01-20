@@ -33,11 +33,12 @@ namespace LOMB.Views
 
                 if (Form1.libros == null) // Si el libro no tiene nada, hace la petición
                 {
-                    var response = client.GetAsync(url).Result;
+                    HttpResponseMessage response = getHttpResponse(client, url);
                     var res = response.Content.ReadAsStringAsync().Result;
                     matListview.Items.Clear();
 
                     List<Libro> libros = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Libro>>(res);
+
                     Form1.instanciaLibros(libros); // Le pasa la lista que acaba de obtener de la API
 
                     foreach (var val in libros)
@@ -67,7 +68,8 @@ namespace LOMB.Views
 
                         matListview.Items.Add(item);
                     }
-                } else // En caso contrario, carga lo que ya hay (ya se había cargado previamente)
+                }
+                else // En caso contrario, carga lo que ya hay (ya se había cargado previamente)
                 {
                     foreach (var val in Form1.libros) // Recorre variable global
                     {
@@ -97,6 +99,19 @@ namespace LOMB.Views
                         matListview.Items.Add(item);
                     }
                 }
+            }
+
+            HttpResponseMessage getHttpResponse(HttpClient client, string url)
+            {
+                HttpResponseMessage response;
+                try
+                {
+                    response = client.GetAsync(url).Result;
+                }
+                catch (Exception e) {
+                    return null;
+                }
+                return response;
             }
         }
 

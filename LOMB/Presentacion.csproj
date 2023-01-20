@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="ControlUsuario\Filtro.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,6 +82,9 @@
     <Compile Include="ControlUsuario\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="Clases\InicioSesion.cs" />
+>>>>>>> alexTest
     <Compile Include="Entities\Autor.cs" />
     <Compile Include="Entities\Categoria.cs" />
     <Compile Include="Entities\Editorial.cs" />
