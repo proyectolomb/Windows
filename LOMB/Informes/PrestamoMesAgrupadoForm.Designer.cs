@@ -31,6 +31,7 @@ namespace LOMB.Informes
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.PrestamoMesAgrupado1 = new LOMB.Informes.PrestamoMesAgrupado();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -39,11 +40,19 @@ namespace LOMB.Informes
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 24);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = this.PrestamoMesAgrupado1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1106, 707);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1106, 683);
             this.crystalReportViewer1.TabIndex = 0;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1106, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // PrestamoMesAgrupadoForm
             // 
@@ -51,10 +60,12 @@ namespace LOMB.Informes
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1106, 707);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Controls.Add(this.menuStrip1);
             this.Name = "PrestamoMesAgrupadoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PrestamoMesAgrupadoForm";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -62,5 +73,6 @@ namespace LOMB.Informes
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private PrestamoMesAgrupado PrestamoMesAgrupado1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

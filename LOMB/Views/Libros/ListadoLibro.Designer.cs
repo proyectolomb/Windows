@@ -63,6 +63,7 @@ namespace LOMB.Views
             this.txtBoxAutor = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxIsbn = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbTitleLibros = new System.Windows.Forms.Label();
+            this.btnInformeLibros = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -565,12 +566,33 @@ namespace LOMB.Views
             this.lbTitleLibros.TabIndex = 81;
             this.lbTitleLibros.Text = "Libros";
             // 
+            // btnInformeLibros
+            // 
+            this.btnInformeLibros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.btnInformeLibros.BorderRadius = 20;
+            this.btnInformeLibros.BorderThickness = 2;
+            this.btnInformeLibros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInformeLibros.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformeLibros.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInformeLibros.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInformeLibros.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInformeLibros.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
+            this.btnInformeLibros.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnInformeLibros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.btnInformeLibros.Location = new System.Drawing.Point(778, 185);
+            this.btnInformeLibros.Name = "btnInformeLibros";
+            this.btnInformeLibros.Size = new System.Drawing.Size(214, 44);
+            this.btnInformeLibros.TabIndex = 82;
+            this.btnInformeLibros.Text = "Informe de libros";
+            this.btnInformeLibros.Click += new System.EventHandler(this.btnInformeLibros_Click);
+            // 
             // ListadoLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(222)))), ((int)(((byte)(181)))));
             this.ClientSize = new System.Drawing.Size(1173, 778);
+            this.Controls.Add(this.btnInformeLibros);
             this.Controls.Add(this.lbTitleLibros);
             this.Controls.Add(this.lbFiltros);
             this.Controls.Add(this.btnLimpiar);
@@ -633,5 +655,6 @@ namespace LOMB.Views
         private System.Windows.Forms.Label lbTitleLibros;
         private System.Windows.Forms.Label lbNombre;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxNombre;
+        private Guna.UI2.WinForms.Guna2Button btnInformeLibros;
     }
 }

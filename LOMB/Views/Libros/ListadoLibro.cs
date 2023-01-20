@@ -166,5 +166,11 @@ namespace LOMB.Views
             getLibro();
             fillCategorias();
         }
+
+        private void btnInformeLibros_Click(object sender, EventArgs e)
+        {
+            Informes.LibrosForm libros = new Informes.LibrosForm();
+            libros.Show();
+        }
     }
 }
