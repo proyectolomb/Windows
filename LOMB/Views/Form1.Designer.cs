@@ -32,8 +32,6 @@ namespace LOMB
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pctUsuario = new System.Windows.Forms.PictureBox();
-            this.pctLogout = new System.Windows.Forms.PictureBox();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
@@ -53,17 +51,19 @@ namespace LOMB
             this.btnNuevoPrestamo = new System.Windows.Forms.Button();
             this.btnPrestamo = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelHome = new System.Windows.Forms.Panel();
+            this.pctUsuario = new System.Windows.Forms.PictureBox();
+            this.pctLogout = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogout)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelLectoresSubmenu.SuspendLayout();
             this.panelLibrosSubmenu.SuspendLayout();
             this.panelPrestamosSubmenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,28 +96,6 @@ namespace LOMB
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(207, 59);
             this.panel2.TabIndex = 8;
-            // 
-            // pctUsuario
-            // 
-            this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
-            this.pctUsuario.Location = new System.Drawing.Point(5, 18);
-            this.pctUsuario.Name = "pctUsuario";
-            this.pctUsuario.Size = new System.Drawing.Size(24, 30);
-            this.pctUsuario.TabIndex = 10;
-            this.pctUsuario.TabStop = false;
-            // 
-            // pctLogout
-            // 
-            this.pctLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctLogout.Image = ((System.Drawing.Image)(resources.GetObject("pctLogout.Image")));
-            this.pctLogout.Location = new System.Drawing.Point(168, 16);
-            this.pctLogout.Name = "pctLogout";
-            this.pctLogout.Size = new System.Drawing.Size(33, 30);
-            this.pctLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pctLogout.TabIndex = 0;
-            this.pctLogout.TabStop = false;
-            this.pctLogout.MouseEnter += new System.EventHandler(this.pctLogout_MouseEnter);
-            this.pctLogout.MouseLeave += new System.EventHandler(this.pctLogout_MouseLeave);
             // 
             // lbUsuario
             // 
@@ -421,16 +399,6 @@ namespace LOMB
             this.panelLogo.Size = new System.Drawing.Size(207, 132);
             this.panelLogo.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, -6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panelHome
             // 
             this.panelHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(222)))), ((int)(((byte)(181)))));
@@ -440,6 +408,39 @@ namespace LOMB
             this.panelHome.Name = "panelHome";
             this.panelHome.Size = new System.Drawing.Size(1189, 817);
             this.panelHome.TabIndex = 1;
+            this.panelHome.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHome_Paint);
+            // 
+            // pctUsuario
+            // 
+            this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
+            this.pctUsuario.Location = new System.Drawing.Point(5, 18);
+            this.pctUsuario.Name = "pctUsuario";
+            this.pctUsuario.Size = new System.Drawing.Size(24, 30);
+            this.pctUsuario.TabIndex = 10;
+            this.pctUsuario.TabStop = false;
+            // 
+            // pctLogout
+            // 
+            this.pctLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctLogout.Image = ((System.Drawing.Image)(resources.GetObject("pctLogout.Image")));
+            this.pctLogout.Location = new System.Drawing.Point(168, 16);
+            this.pctLogout.Name = "pctLogout";
+            this.pctLogout.Size = new System.Drawing.Size(33, 30);
+            this.pctLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pctLogout.TabIndex = 0;
+            this.pctLogout.TabStop = false;
+            this.pctLogout.MouseEnter += new System.EventHandler(this.pctLogout_MouseEnter);
+            this.pctLogout.MouseLeave += new System.EventHandler(this.pctLogout_MouseLeave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -457,13 +458,13 @@ namespace LOMB
             this.panelSideMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogout)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panelLectoresSubmenu.ResumeLayout(false);
             this.panelLibrosSubmenu.ResumeLayout(false);
             this.panelPrestamosSubmenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

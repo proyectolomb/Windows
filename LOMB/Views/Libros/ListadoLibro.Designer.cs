@@ -29,6 +29,7 @@ namespace LOMB.Views
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListadoLibro));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -38,6 +39,7 @@ namespace LOMB.Views
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.matListview = new MaterialSkin.Controls.MaterialListView();
+            this.lbTitleLibros = new System.Windows.Forms.Label();
             this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
@@ -137,6 +139,17 @@ namespace LOMB.Views
             this.matListview.TabIndex = 10;
             this.matListview.UseCompatibleStateImageBehavior = false;
             this.matListview.View = System.Windows.Forms.View.Details;
+            // 
+            // lbTitleLibros
+            // 
+            this.lbTitleLibros.AutoSize = true;
+            this.lbTitleLibros.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitleLibros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(87)))), ((int)(((byte)(84)))));
+            this.lbTitleLibros.Location = new System.Drawing.Point(478, 22);
+            this.lbTitleLibros.Name = "lbTitleLibros";
+            this.lbTitleLibros.Size = new System.Drawing.Size(137, 54);
+            this.lbTitleLibros.TabIndex = 81;
+            this.lbTitleLibros.Text = "Libros";
             // 
             // guna2Button11
             // 
@@ -366,7 +379,7 @@ namespace LOMB.Views
             this.guna2Button1.Size = new System.Drawing.Size(43, 45);
             this.guna2Button1.TabIndex = 65;
             // 
-            // lbFiltros
+            // filtro1
             // 
             this.lbFiltros.AutoSize = true;
             this.lbFiltros.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -594,10 +607,6 @@ namespace LOMB.Views
             this.ClientSize = new System.Drawing.Size(1173, 778);
             this.Controls.Add(this.btnInformeLibros);
             this.Controls.Add(this.lbTitleLibros);
-            this.Controls.Add(this.lbFiltros);
-            this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnAplicar);
-            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Button11);
             this.Controls.Add(this.guna2Button12);
             this.Controls.Add(this.guna2Button9);
@@ -614,8 +623,6 @@ namespace LOMB.Views
             this.Name = "ListadoLibro";
             this.Text = "NuevoLibro";
             this.Load += new System.EventHandler(this.ListadoLibro_Load);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -642,16 +649,6 @@ namespace LOMB.Views
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.Label lbFiltros;
-        private Guna.UI2.WinForms.Guna2Button btnLimpiar;
-        private Guna.UI2.WinForms.Guna2Button btnAplicar;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbBoxCategoria;
-        private System.Windows.Forms.Label lbCategoria;
-        private System.Windows.Forms.Label lbAutor;
-        private System.Windows.Forms.Label lbIsbn;
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxAutor;
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxIsbn;
         private System.Windows.Forms.Label lbTitleLibros;
         private System.Windows.Forms.Label lbNombre;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxNombre;

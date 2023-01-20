@@ -234,5 +234,15 @@ namespace LOMB
         {
             pctLogout.BackColor = Color.FromArgb(253, 247, 237);
         }
+
+        private void filtro1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelHome_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
