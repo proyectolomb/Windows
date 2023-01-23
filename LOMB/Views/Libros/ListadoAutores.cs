@@ -18,7 +18,7 @@ namespace LOMB.Views.Libros
             InitializeComponent();
         }
         /// <summary>Recupera todos los autores de la base de datos.</summary>
-        void getAutores()
+        public void getAutores()
         {
             using (var client = new HttpClient())
             {
@@ -28,7 +28,7 @@ namespace LOMB.Views.Libros
 
                 if (Form1.autores == null) // Si el libro no tiene nada, hace la petición
                 {
-                    var response = client.GetAsync(url).Result;
+                    HttpResponseMessage response = getHttpResponse(client, url);
                     var res = response.Content.ReadAsStringAsync().Result;
                     matListView.Items.Clear();
 
@@ -71,7 +71,19 @@ namespace LOMB.Views.Libros
                 }
             }
         }
-
+        HttpResponseMessage getHttpResponse(HttpClient client, string url)
+        {
+            HttpResponseMessage response;
+            try
+            {
+                response = client.GetAsync(url).Result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            return response;
+        }
         void getAutoresCategorias()
         {
 
@@ -102,6 +114,11 @@ namespace LOMB.Views.Libros
         }
 
         private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbPersona_Click(object sender, EventArgs e)
         {
 
         }
