@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LOMB.Clases;
 
 namespace LOMB.Views
 {
@@ -15,6 +16,24 @@ namespace LOMB.Views
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            string usuario, contrasenna;
+            usuario = txtBoxUsuario.Text;
+            contrasenna = txtBoxContra.Text;
+
+            if (InicioSesion.login(usuario, contrasenna))
+            {
+                this.Hide();
+                Form1 frm1 = new Form1();
+                frm1.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("USUARIO/CONTRASEÑA INCORRECTO");
+            }
         }
     }
 }

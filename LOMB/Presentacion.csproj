@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\InicioSesion.cs" />
     <Compile Include="ControlDeUsuario\Filtro.cs">
       <SubType>UserControl</SubType>
     </Compile>

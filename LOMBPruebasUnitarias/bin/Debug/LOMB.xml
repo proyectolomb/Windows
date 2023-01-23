@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LOMB</name>
+    </assembly>
+    <members>
+        <member name="F:LOMB.ControlDeUsuario.Filtro.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:LOMB.ControlDeUsuario.Filtro.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:LOMB.ControlDeUsuario.Filtro.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:LOMB.Entities.Autor.ToString">
+            <summary>Método toString de la entidad Autor.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="M:LOMB.Entities.Categoria.ToString">
+            <summary>Método toString de la entidad Categoría.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="M:LOMB.Entities.Editorial.ToString">
+            <summary>Método toString de la entidad Editorial.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="M:LOMB.Entities.Idioma.ToString">
+            <summary>Método toString de la entidad Idioma.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="M:LOMB.Entities.Libro.ToString">
+            <summary>Método toString de la entidad Libro.</summary>
+            <returns>Cadena con los datos de la entidad.</returns>
+        </member>
+        <member name="F:LOMB.Informes.LibrosForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Informes.LibrosForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Informes.LibrosForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LOMB.Informes.PrestamoAlumnoForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Informes.PrestamoAlumnoForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Informes.PrestamoAlumnoForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LOMB.Informes.PrestamoMesAgrupadoForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Informes.PrestamoMesAgrupadoForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Informes.PrestamoMesAgrupadoForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LOMB.Views.Lectores.ListadoLectores">
+            <summary>Clase correspondiente a la ventana para listar los lectores de la base de datos.</summary>
+        </member>
+        <member name="M:LOMB.Views.Lectores.ListadoLectores.#ctor">
+            <summary>Constructor para el listado de los lectores. Inicializa los componentes.</summary>
+        </member>
+        <member name="M:LOMB.Views.Lectores.ListadoLectores.apiLectores">
+            <summary>Recupera todos los lectores de la base de datos.</summary>
+        </member>
+        <member name="M:LOMB.Views.Lectores.ListadoLectores.btnLimpiar_Click(System.Object,System.EventArgs)">
+            <summary>Limpia todos los campos de filtrado de la vista.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Argumentos del evento.</param>
+        </member>
+        <member name="M:LOMB.Views.Lectores.ListadoLectores.ListadoLectores_Load(System.Object,System.EventArgs)">
+            <summary>Llama al método getLectores() y carga los datos en la tabla.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Argumentos del evento.</param>
+        </member>
+        <member name="F:LOMB.Views.Lectores.ListadoLectores.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.Lectores.ListadoLectores.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.Lectores.ListadoLectores.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LOMB.Views.Lectores.NuevoLector">
+            <summary>Formulario para añadir nuevo lector.</summary>
+        </member>
+        <member name="M:LOMB.Views.Lectores.NuevoLector.btnLimpiar_Click(System.Object,System.EventArgs)">
+            <summary>Limpia todos los campos de filtrado de la vista.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Agumentos del evento</param>
+        </member>
+        <member name="F:LOMB.Views.Lectores.NuevoLector.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.Lectores.NuevoLector.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.Lectores.NuevoLector.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LOMB.Views.Libros.ListadoAutores">
+            <summary>Formulario para el listado de autores.</summary>
+        </member>
+        <member name="M:LOMB.Views.Libros.ListadoAutores.#ctor">
+            <summary>Constructor para inicializar el formulario.</summary>
+        </member>
+        <member name="M:LOMB.Views.Libros.ListadoAutores.getAutores">
+            <summary>Recupera todos los autores de la base de datos.</summary>
+        </member>
+        <member name="M:LOMB.Views.Libros.ListadoAutores.btnLimpiar_Click(System.Object,System.EventArgs)">
+            <summary>Limpia todos los campos de filtrado de la vista.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Agumentos del evento</param>
+        </member>
+        <member name="M:LOMB.Views.Libros.ListadoAutores.ListadoAutores_Load(System.Object,System.EventArgs)">
+            <summary>Todas las instrucciones dentro de este método s ejecutarán al carga el formulario.</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">Argumentos del evento.</param>
+        </member>
+        <member name="F:LOMB.Views.Libros.ListadoAutores.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.Libros.ListadoAutores.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.Libros.ListadoAutores.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LOMB.Views.Login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.Login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.Login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.Devolucion.deletePrestamo(System.String)">
+            <summary>Elimina el préstamo cuyo código de ejemplar coincide con el parámetro.</summary>
+            <param name="ejemplar">Código el ejemplar cuyo péstamo se quiere eliminar.</param>
+        </member>
+        <member name="M:LOMB.Views.Devolucion.btnDevolver_Click(System.Object,System.EventArgs)">
+            <summary>Método que se ejecuta cuando se pulsa el botón de devolver préstamo. Llama al método deletePrestamo().</summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:LOMB.Views.Devolucion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.Devolucion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.Devolucion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.HistorialPrestamo.btnLimpiar_Click(System.Object,System.EventArgs)">
+            <summary>Limpia todos los campos de filtrado de la vista.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Agumentos del evento</param>
+        </member>
+        <member name="F:LOMB.Views.HistorialPrestamo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.HistorialPrestamo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.HistorialPrestamo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LOMB.Views.Home">
+            <summary>Ventana principal. Contiene el menú y  un formulario hijo en el que se abren el resto de ventanas.</summary>
+        </member>
+        <member name="M:LOMB.Views.Home.#ctor">
+            <summary>constructor para inicializar la home.</summary>
+        </member>
+        <member name="M:LOMB.Views.Home.openChildForm(System.Windows.Forms.Form)">
+            <summary>Abre el formulario pasado por parámetro en el formulario hijo.</summary>
+            <param name="childForm">Formulario a abrir.</param>
+        </member>
+        <member name="M:LOMB.Views.Home.btnHomeNuevoPrestamo_Click(System.Object,System.EventArgs)">
+            <summary>Método que se ejecuta cuando se hace clic en el botón de "Nuevo préstamo"</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">
+              <para>
+            Argumentos del evento</para>
+            </param>
+        </member>
+        <member name="M:LOMB.Views.Home.btnHomeDevolucion_Click(System.Object,System.EventArgs)">
+            <summary>Método que se ejecuta cuando se hace clic en el botón de "Devolución"</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">
+              <para>
+            Argumentos del evento</para>
+            </param>
+        </member>
+        <member name="M:LOMB.Views.Home.btnHomePrestamosEnCurso_Click(System.Object,System.EventArgs)">
+            <summary>Método que se ejecuta cuando se hace clic en el botón de "Préstamos en curso"</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">
+              <para>
+            Argumentos del evento</para>
+            </param>
+        </member>
+        <member name="F:LOMB.Views.Home.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.Home.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.Home.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.ListadoLibro.getLibro">
+            <summary>
+              <para> Recupera los datos de los libros.</para>
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.ListadoLibro.getEjemplaresDeUnLibro(System.String,System.Windows.Forms.ListViewItem)">
+            <summary>Devuelve los ejemplares de un libro en cuestión.</summary>
+            <param name="isbn">ISBN del libro en cuestión</param>
+            <param name="item">Registro de la tabla</param>
+        </member>
+        <member name="M:LOMB.Views.ListadoLibro.fillCategorias">
+            <summary>Rellena el combobox de categorías con todas las existentes.</summary>
+        </member>
+        <member name="M:LOMB.Views.ListadoLibro.ListadoLibro_Load(System.Object,System.EventArgs)">
+            <summary>Todas las instrucciones dentro de este método s ejecutarán al carga el formulario.</summary>
+            <param name="sender">Objeto que envía el evento</param>
+            <param name="e">Argumentos del evento.</param>
+        </member>
+        <member name="F:LOMB.Views.ListadoLibro.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.ListadoLibro.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.ListadoLibro.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.NuevoLibro.btnLimpiar_Click(System.Object,System.EventArgs)">
+            <summary>Limpia todos los campos de filtrado de la vista.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Agumentos del evento</param>
+        </member>
+        <member name="F:LOMB.Views.NuevoLibro.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.NuevoLibro.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.NuevoLibro.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.NuevoPrestamo.btnLimpiar_Click(System.Object,System.EventArgs)">
+            <summary>Limpia todos los campos de filtrado de la vista.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Agumentos del evento</param>
+        </member>
+        <member name="M:LOMB.Views.NuevoPrestamo.getLibros">
+            <summary>
+              <para>
+            Recupera los datos de todos los libros de la base de datos.</para>
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.NuevoPrestamo.getLectores">
+            <summary>Recupera todos los lectores de la base de datos.</summary>
+        </member>
+        <member name="M:LOMB.Views.NuevoPrestamo.getEjemplaresDeUnLibro">
+            <summary>Recupera todos los ejemplares de un libro.</summary>
+        </member>
+        <member name="M:LOMB.Views.NuevoPrestamo.cmbBoxLibro_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>Método que se ejecuta cada vez que se elige un valor del combobox de libros. En este caso, recupera los ejemplares del libro en cuestión.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Argumentos del evento</param>
+        </member>
+        <member name="F:LOMB.Views.NuevoPrestamo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.NuevoPrestamo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.NuevoPrestamo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.PrestamosEnCurso.getPrestamos">
+            <summary>Recupera todos los préstamos de la base de datos.</summary>
+        </member>
+        <member name="M:LOMB.Views.PrestamosEnCurso.btnLimpiar_Click(System.Object,System.EventArgs)">
+            <summary>Limpia todos los campos de filtrado de la vista.</summary>
+            <param name="sender">Elemento que genera el evento.</param>
+            <param name="e">Agumentos del evento</param>
+        </member>
+        <member name="F:LOMB.Views.PrestamosEnCurso.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LOMB.Views.PrestamosEnCurso.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LOMB.Views.PrestamosEnCurso.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LOMB.Form1.hideSubMenu">
+            <summary>Colapsa el submenú</summary>
+        </member>
+        <member name="M:LOMB.Form1.showSubMenu(System.Windows.Forms.Panel)">
+            <summary>Expande el submenú</summary>
+            <param name="subMenu">Panel cuyo submenú se quiere mostrar.</param>
+        </member>
+        <member name="F:LOMB.Form1.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:LOMB.Form1.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:LOMB.Form1.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:LOMB.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="T:LOMB.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.devolucion">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.devolucion1">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.libro">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.libro1">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.libro2">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.nuevo_prestamo">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LOMB.Properties.Resources.prestamos_en_curso">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
