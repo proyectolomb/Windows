@@ -4,6 +4,23 @@
         <name>LOMB</name>
     </assembly>
     <members>
+        <member name="F:LOMB.ControlDeUsuario.Filtro.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:LOMB.ControlDeUsuario.Filtro.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:LOMB.ControlDeUsuario.Filtro.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
         <member name="M:LOMB.Entities.Autor.ToString">
             <summary>Método toString de la entidad Autor.</summary>
             <returns>Cadena con los datos de la entidad.</returns>
@@ -81,7 +98,7 @@
         <member name="M:LOMB.Views.Lectores.ListadoLectores.#ctor">
             <summary>Constructor para el listado de los lectores. Inicializa los componentes.</summary>
         </member>
-        <member name="M:LOMB.Views.Lectores.ListadoLectores.getLectores">
+        <member name="M:LOMB.Views.Lectores.ListadoLectores.apiLectores">
             <summary>Recupera todos los lectores de la base de datos.</summary>
         </member>
         <member name="M:LOMB.Views.Lectores.ListadoLectores.btnLimpiar_Click(System.Object,System.EventArgs)">

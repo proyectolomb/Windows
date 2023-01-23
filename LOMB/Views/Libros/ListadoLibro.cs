@@ -129,13 +129,24 @@ namespace LOMB.Views
         /// <summary>Rellena el combobox de categorías con todas las existentes.</summary>
         void fillCategorias()
         {
-            foreach (var libro in Form1.libros)
+            HashSet<string> categorias = new HashSet<string>();
+            foreach (Libro libro in Form1.libros)
             {
-                foreach (var categoria in libro.categorias)
+                foreach (Categoria c in libro.categorias)
                 {
-                    cmbBoxCategoria.Items.Add(categoria.nombre);
-                }   
+                    categorias.Add(c.nombre);
+                }
             }
+
+            List<string> d = new List<string>();
+            foreach (string z in categorias)
+            {
+                d.Add(z);
+            }
+
+            filtro1.cmbBoxCategoria.DataSource = d;
+
+
         }
 
         private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)

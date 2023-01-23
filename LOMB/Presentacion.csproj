@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlDeUsuario\Filtro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlDeUsuario\Filtro.Designer.cs">
+      <DependentUpon>Filtro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Autor.cs" />
     <Compile Include="Entities\Categoria.cs" />
     <Compile Include="Entities\Editorial.cs" />
@@ -187,6 +193,9 @@
     <Compile Include="Views\Prestamos\PrestamosEnCurso.Designer.cs">
       <DependentUpon>PrestamosEnCurso.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ControlDeUsuario\Filtro.resx">
+      <DependentUpon>Filtro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Informes\CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
