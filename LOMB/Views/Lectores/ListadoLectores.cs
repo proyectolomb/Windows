@@ -94,7 +94,7 @@ namespace LOMB.Views.Lectores
         /// <param name="e">Argumentos del evento.</param>
         private void ListadoLectores_Load(object sender, EventArgs e)
         {
-            getLectores();
+            apiLectores();
         }
     }
 }

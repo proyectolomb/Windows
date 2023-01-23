@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\InicioSesion.cs" />
     <Compile Include="Entities\Autor.cs" />
     <Compile Include="Entities\Categoria.cs" />
     <Compile Include="Entities\Editorial.cs" />
